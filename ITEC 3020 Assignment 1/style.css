@@ -1,0 +1,241 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.logo {
+    height:128px;
+    width:auto;
+    vertical-align: middle;
+    image-rendering: crisp-edges;
+}
+
+.nav-bar {
+    text-align: center;
+    list-style-type: none;
+    background-color: black;
+    padding:16px 32px;
+}
+
+li {
+    display: inline;
+}
+
+.webpage-link {
+    padding: 32px;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.webpage-link:hover {
+    color:rgb(0, 128, 255);
+    background-color: rgba(0, 32, 119, 0.647);
+    transition-duration: 0.5s;
+    transition-property: inherit;
+}
+
+.logo:hover {
+    content: url("BrandLogo_Blue.png");
+    transition-duration: 0.5s;
+    transition-property: inherit;
+}
+
+.welcome-message-page {
+  height:70vh;
+  background-color:rgb(17, 16, 16);
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  padding:40px;
+}
+
+.welcome-container {
+  max-width:500px;
+  margin: 0 auto;
+}
+
+.introduction-heading {
+  color:white;
+    padding-left:25px;
+    padding-right: 25px;
+    padding-bottom:10px;
+    font-size:48px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.japanese-introduction-heading {
+  color:white;
+  font-size: 36px;
+  text-align:center;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  padding-bottom:30px;
+}
+
+.introduction-paragraph {
+  color:white;
+  font-size:18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.7rem;
+}
+
+
+/*.image-section-tagline {
+    background-image:url("ArminCarTagLine.png");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:90vh;
+    background-attachment: fixed;
+}*/
+
+.welcome-background-image {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('welcome-page-gtr-r32.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    padding:0px 40px;
+  }
+  
+  .welcome-content {
+    max-width: 800px;
+  }
+  
+  .welcome-background-text {
+    font-size: 5rem;
+    margin-bottom: 8px;
+  }
+
+  .welcome-background-text-japanese {
+    font-size: 2.5rem;
+    margin-bottom:24px;
+  }
+  
+ /* .welcome-button-1,
+  .welcome-button-2 {
+    display: inline-block; 
+    margin: 0 12px;
+    padding: 16px 32px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .welcome-button-1:hover,
+  .welcome-button-2:hover {
+    background-color: rgba(0, 32, 119, 0.647);
+    color: rgb(0, 128, 255);
+  } */
+
+  .company-overview-message-page {
+    background-color: rgb(10, 9, 9);
+    padding: 80px 32px;
+    text-align: center;
+    color: white;
+  }
+  
+  .company-overview-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .company-overview-heading {
+    font-size: 42px;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .japanese-company-overview-heading {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .company-overview-paragraph {
+    font-size: 18px;
+    line-height: 1.7rem;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .car-image {
+    width:100%;
+    border: 2px solid white;
+  }
+
+  .recent-release-heading {
+    background-color:black; 
+    color:white; 
+    text-align:center;
+    padding-left:25px;
+    padding-right: 25px;
+    padding-top:25px;
+    padding-bottom:15px;
+    font-size:52px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+  }
+
+  .recent-release-heading-japanese {
+    background-color:black; 
+    color:white; 
+    font-size: 42px;
+    text-align:center;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+  }
+
+  .recent-releases-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: black;
+  padding: 20px;
+  gap:25px;
+  }
+
+ .car-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgb(0, 128, 255);
+  transition:0.3s;
+ }
+
+ .footer-page {
+  width:100%;
+  background-color:rgb(23, 22, 22);
+  padding:20px;
+  height:7.5vh;
+ }
+
+ .copyright-text {
+  text-align:center;
+  color:white;
+ }
+
+
+  
+  
