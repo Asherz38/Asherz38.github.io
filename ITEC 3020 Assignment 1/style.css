@@ -46,24 +46,22 @@ li {
 .welcome-message-page {
   height:70vh;
   background-color:rgb(17, 16, 16);
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
   text-align: center;
-  padding:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome-container {
-  max-width:500px;
+  padding: 0 24px;
   margin: 0 auto;
+  width:100%;
+  max-width:700px;
 }
 
 .introduction-heading {
   color:white;
-    padding-left:25px;
-    padding-right: 25px;
-    padding-bottom:10px;
-    font-size:48px;
+    font-size:2.8rem;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
@@ -71,17 +69,18 @@ li {
 
 .japanese-introduction-heading {
   color:white;
-  font-size: 36px;
+  font-size: 1.8rem;
   text-align:center;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
   padding-bottom:30px;
+  padding-top:7.5px;
 }
 
 .introduction-paragraph {
   color:white;
-  font-size:18px;
+  font-size:1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.7rem;
 }
@@ -184,6 +183,7 @@ li {
   .car-image {
     width:100%;
     border: 2px solid white;
+
   }
 
   .recent-release-heading {
@@ -228,7 +228,6 @@ li {
   width:100%;
   background-color:rgb(23, 22, 22);
   padding:20px;
-  height:7.5vh;
  }
 
  .copyright-text {
@@ -257,8 +256,8 @@ li {
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px;
   justify-content: center;
+  gap: 48px;
 }
 
 .webpage-link {
@@ -279,7 +278,7 @@ li {
 
 @media (max-width: 1149px) {
   .nav-bar {
-    flex-direction: column;
+    flex-direction: column; /* turns the navbar into columns */
     align-items: center;
   }
 
