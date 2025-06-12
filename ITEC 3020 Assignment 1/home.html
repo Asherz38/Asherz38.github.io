@@ -7,6 +7,197 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet"  href="style.css">
+  <style>
+
+/* welcome message page */
+
+.welcome-message-page {
+  height:100vh;
+  background-color:rgb(17, 16, 16);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  padding: 0px 24px;
+  margin: 0px auto;
+  width:100%;
+  max-width:700px;
+}
+
+.introduction-heading {
+  color:white;
+  font-size:2.8rem;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.japanese-introduction-heading {
+  color:white;
+  font-size: 1.8rem;
+  text-align:center;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  padding-bottom:30px;
+  padding-top:7.5px;
+}
+
+.introduction-paragraph {
+  color:white;
+  font-size:1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.7rem;
+}
+
+/* tagline page */
+
+.welcome-background-image {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('welcome-page-gtr-r32.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  padding:0px 40px;
+}
+  
+.welcome-content {
+  max-width: 800px;
+}
+
+.tagline {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+  
+.welcome-background-text {
+  font-size: 5rem;
+  margin-bottom: 8px;
+}
+
+.welcome-background-text-japanese {
+  font-size: 2.5rem;
+  margin-bottom:24px;
+}
+
+.click-to-action-btn {
+  background-color: rgb(0, 0, 0); 
+  color: white;
+  border: 2px solid rgb(255, 255, 255); 
+  padding: 16px 36px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 8px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.click-to-action-btn:hover {
+  background-color: rgb(0, 128, 255); 
+  color: white;       
+  transform:scale(1.05);                 
+}
+
+  /* company overview page */
+
+.company-overview-message-page {
+  background-color: rgb(10, 9, 9);
+  padding: 80px 32px;
+  text-align: center;
+  color: white;
+}
+  
+.company-overview-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+  
+.company-overview-heading {
+  font-size: 42px;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom:20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.japanese-company-overview-heading {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.company-overview-paragraph {
+  font-size: 18px;
+  line-height: 1.7rem;
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  /* recent releases */
+
+.car-image {
+  width:100%;
+  border: 2px solid white;
+}
+
+.recent-release-heading {
+  background-color:black; 
+  color:white; 
+  text-align:center;
+  padding-left:25px;
+  padding-right: 25px;
+  padding-top:25px;
+  padding-bottom:15px;
+  font-size:52px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.recent-release-heading-japanese {
+  background-color:black; 
+  color:white; 
+  font-size: 42px;
+  text-align:center;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.recent-releases-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: black;
+  padding: 20px;
+  gap:25px;
+}
+
+.car-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgb(0, 128, 255); 
+  border: 2px solid rgb(0, 128, 255); 
+  transition:0.3s;
+}
+</style>
     </head>
     <body>
 
@@ -36,9 +227,17 @@
 
         <section class="welcome-message-page">
             <div class="welcome-container">
-            <h1 class="introduction-heading">Welcome To Armin's Specifications</h1>
+              <h1 class="introduction-heading">Welcome To Armin's Specifications</h1>
                 <h2 class="japanese-introduction-heading">スペシフィケーションズ</h2>
-                    <p class = "introduction-paragraph">Where we tune, restore and sell legendary cars for the drivers who demand more.</p>
+                    <p class = "introduction-paragraph">We tune, restore, and sell legendary cars for drivers who expect more — more power, more precision, more connection to the road. 
+                      
+                      <br>
+                      <br>
+                    Every vehicle we craft is a blend of heritage and high performance, brought back to life with obsessive attention to detail and a deep respect for automotive legacy.
+
+                      <br>
+                      <br>
+                    From iconic classics to modern performance builds, our mission is simple: create machines that stir the soul and command the road. This isn’t just about driving — it’s about feeling every turn, hearing every note of the engine, and owning a car that’s truly one of a kind.</p>
                 </div>
           </section>
 
@@ -46,17 +245,30 @@
         
         <section class="welcome-background-image">
             <div class="welcome-content">
-              <h1 class="welcome-background-text">TUNED FOR LEGACY</h1>
-              <h2 class="welcome-background-text-japanese">伝統のためのチューニング</h2>
-            <h6>Tagline</h6>
+              <p class="tagline">TAGLINE</p>
+                <h1 class="welcome-background-text">TUNED FOR LEGACY</h1>
+                <h2 class="welcome-background-text-japanese">伝統のためのチューニング</h2>
+                <button class="click-to-action-btn btn">Test 1</button>
             </div>
           </section> 
 
+          <!--Company Overview Page-->
+
           <section class="company-overview-message-page">
             <div class="company-overview-container">
-            <h1 class="company-overview-heading">Company Overview</h1>
+              <h1 class="company-overview-heading">Company Overview</h1>
                 <h2 class="japanese-company-overview-heading">私たちの事業内容</h2>
-                    <p class = "company-overview-paragraph">At Armin’s Specifications, we specialize in high-performance tuning and rare vehicle sourcing. Whether it’s restoring a classic JDM icon or pushing modern builds to their limits, we deliver precision-crafted machines built for legacy. Our passion drives everything — from ECU remaps and widebody kits to curated car sales for true enthusiasts.</p>
+                    <p class = "company-overview-paragraph">At Armin’s Specifications, we specialize in high-performance tuning and rare vehicle sourcing. Whether it’s restoring a classic JDM icon or pushing modern builds to their limits, we deliver precision-crafted machines built for legacy. Our passion drives everything — from ECU remaps and widebody kits to curated car sales for true enthusiasts.
+
+                      <br>
+                      <br>
+
+                    We don’t just modify cars — we elevate them. Every build is engineered with intention, blending modern performance upgrades with timeless style. Our workshop is a space where innovation meets tradition, and where every detail, from suspension geometry to intake acoustics, is fine-tuned for peak driving emotion.
+
+                      <br>
+                      <br>
+                      
+                    For us, it’s not about mass production — it’s about meaningful connection. We work closely with each client to understand their vision, their story, and the kind of machine that truly speaks to them. Because at the end of the day, we don’t just sell cars. We build legends.</p>
                 </div>
           </section>
 
