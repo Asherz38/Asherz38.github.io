@@ -2,9 +2,50 @@
 <html>
     <head>
         <title>Home</title>
-        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"  href="style.css">
     </head>
+    <style>
+        .title-page {
+          height:20vh;
+          background-color: black;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .services-intro-heading-title {
+          color: white;
+          font-size: 3rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          font-weight: 900;
+          text-shadow: 
+          0 0 8px rgba(255, 255, 255, 0.7),
+          0 0 16px rgba(255, 255, 255, 0.5),
+          0 0 24px rgba(255, 255, 255, 0.3);
+        }
+
+        .services-intro-japanese-title {
+          color: white;
+          font-size: 2rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          font-weight: 900;
+          text-shadow: 
+          0 0 8px rgba(255, 255, 255, 0.7),
+          0 0 16px rgba(255, 255, 255, 0.5),
+          0 0 24px rgba(255, 255, 255, 0.3);
+        }
+    </style>
     <body>
+
+          <!--Navbar-->
         <header>
             <nav class="nav-bar">
               <a href="home.html"><img class="logo" src="BrandLogo.png" alt="Logo Not Loaded"></a>
@@ -21,124 +62,114 @@
 
           <!--Section Video-->
 
-        <section>
-          <video class="intro-video" style="display:block;" autoplay muted loop width="100%"><source src="ServicesVideo.mp4" type="video/mp4"></video>
-      </section>
+          <section>
+              <video class="intro-video" style="display:block;" autoplay muted loop width="100%"><source src="ServicesVideo.mp4" type="video/mp4"></video>
+          </section>
 
-        <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="JDM Tuning and Custom Services by Armin's Specifications." />
-  <title>Armin's Specifications | JDM Services</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+          <!--Performance Upgrade Title Page-->
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f0f0f;
-      color: #f1f1f1;
-      line-height: 1.6;
-    }
+          <section class="title-page">
+            <h1 class="services-intro-heading-title">Performance Upgrades</h1>
+            <h2 class="services-intro-japanese-title">パフォーマンスアップグレード</h2>
+          </section>
 
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
+          <!--Performance Upgrades Page-->
 
-    header {
-      background-color: #1b1b1b;
-      padding: 3rem 1rem;
-      text-align: center;
-      border-bottom: 3px solid #ff3c00;
-    }
+            <section class="performance-upgrades-page">
+              <div class="JDM-tuning-services-page">
+                <h4>JDM Tuning Services</h4>
+                <p>Tailored to your dream: Stage 1, Stage 2, and Stage 3 tuning, plus fiery
+                burbles, pops & crackles—and full flame kit installation. We’ll craft a
+                powerful and aggressive sound profile that elevates performance and
+                turns heads.</p>
+                </div>
+                <div class="performance-suspension-upgrades-page">
+                <h4>Performance Suspension Upgrades</h4>
+                <p>From adjustable coilovers to air suspension systems, we tune
+                handling, stance, and comfort. Whether it’s daily drivability, track
+                precision, or slammed style, we’ve got you fully dialed in.</p>
+                </div>
+                <div class="custom-exhaust-system-page">
+                <h4>Custom Exhaust Systems</h4>
+                <p>We build and install custom exhausts tuned for JDM powerhouses.
+                From deep growls to race-inspired tone curves, every system is
+                precision crafted, TIG-welded, and perfectly fitted for peak
+                performance.</p>
+                </div>
+            </section>
 
-    header h1 {
-      font-size: 2.75rem;
-      color: #ff3c00;
-    }
+          <!--Aesthetic Enhancements Page-->
 
-    header p {
-      font-size: 1.2rem;
-      color: #bbb;
-      margin-top: 0.5rem;
-    }
+          <section class="title-page">
+            <h1 class="services-intro-heading-title">Aesthetic Enhancements</h1>
+            <h2 class="services-intro-japanese-title">外観カスタム</h2>
+          </section>
 
-    main {
-      padding: 3rem 0;
-    }
+          <section class="aesthetic-enhancements-page">
+            <h4>Wide-Body Kit Installs</h4>
+            <p>Transform your ride with sleek, performance-enhancing wide-body
+              kits. We handle full fitment, paint-matching, and
+              customization—giving your JDM car a race-ready stance and
+              aggressive aesthetic.</p>
+        </section>
 
-    .service {
-      margin-bottom: 2.5rem;
-      padding-left: 1rem;
-      border-left: 5px solid #ff3c00;
-    }
+          <!--General Maintenance & Repair Page-->
 
-    .service h2 {
-      font-size: 1.6rem;
-      color: #ff3c00;
-      margin-bottom: 0.5rem;
-    }
+          <section class="title-page">
+            <h1 class="services-intro-heading-title">General Maintenance & Repair</h1>
+            <h2 class="services-intro-japanese-title">一般メンテナンス & 修理</h2>
+          </section>
 
-    footer {
-      background-color: #1b1b1b;
-      padding: 1.5rem 0;
-      text-align: center;
-      color: #888;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>JDM Performance Services</h1>
-      <p>Performance. Style. Precision. Customization.</p>
-    </div>
-  </header>
+          <section class="general-maintenance-and-repair-page">
+            <h4>Repair Services</h4>
+            <p>Whether it’s engine trouble, drivetrain issues, or electrical diagnostics, our expert technicians treat every vehicle with the same meticulous care we bring to our custom builds. We use high-quality OEM and performance parts, and every repair is handled with a commitment to longevity and driving feel. From JDM legends to European performance machines, we make sure your car not only runs — it thrives.</p>
+        </section>
 
-  <main class="container">
-    <section class="service">
-      <h2>1. JDM Tuning Services</h2>
-      <p>Stage 1, 2, or 3 tuning plus burbles, pops, crackles, and flame kit installs. Get a bold sound and beast-mode performance tailored to your dream ride.</p>
-    </section>
+  
+          <!--JDM Stock Car Sales Page-->
 
-    <section class="service">
-      <h2>2. Wide‑Body Kit Installs</h2>
-      <p>Enhance your stance and style with full wide-body conversions, including paint matching and precision fitment for that aggressive, race-ready look.</p>
-    </section>
+          <section class="title-page">
+            <h1 class="services-intro-heading-title">JDM Stock Car Sales</h1>
+            <h2 class="services-intro-japanese-title">輸入車</h2>
+          </section>
 
-    <section class="service">
-      <h2>3. Performance Suspension Upgrades</h2>
-      <p>From track setups to show-ready slams, we install coilovers, air rides, and custom geometry to dial in your perfect handling and ride height.</p>
-    </section>
+          <section class="JDM-stock-car-sales-page">
+            <h4>Selling Stock JDM Vehicles</h4>
+            <p>We take pride in offering a curated selection of authentic, stock JDM vehicles — untouched icons that embody the raw spirit of Japanese engineering. From low-mileage imports to well-preserved classics, each car is carefully sourced, legally imported, and fully inspected to meet our strict quality standards. Whether you're chasing nostalgia or beginning your JDM journey, our lineup delivers original, unmodified legends straight from Japan. Visit our <b>Products</b> page to explore our current inventory and secure a piece of automotive history.</p>
+        </section>
 
-    <section class="service">
-      <h2>4. Stock JDM Car Sales</h2>
-      <p>Start your build with a clean, authentic JDM platform. Browse our curated inventory of legendary imports ready for customization or daily driving.</p>
-    </section>
+          <!--Vehicle Q&A Assistance Page-->
+          
+          <section class="title-page">
+            <h1 class="services-intro-heading-title">Vehicle Q&A Assistance</h1>
+            <h2 class="services-intro-japanese-title">車両に関するQ&Aサポート</h2>
+          </section>
 
-    <section class="service">
-      <h2>5. Custom Exhaust Systems</h2>
-      <p>We fabricate TIG-welded custom exhausts tuned for tone and flow—from deep street growls to track-day screamers. Built to perform and impress.</p>
-    </section>
-  </main>
+          <section class="vehicle-Q&A-assistance-page">
+            <h4>Q&A For Vehicles</h4>
+            <p>Have questions about a specific vehicle, import process, or customization options? Our team is here to help. Whether you're curious about service history, engine specs, or registration requirements, we’re happy to provide the answers you need to make an informed decision. For quick responses, check out our <b>Frequently Asked Questions</b> section at the bottom of the page. Still need help? Use the <b>Contact Us</b> form at the top of the page to reach out directly — we’re passionate about cars and even more passionate about helping you find the right one.</p>
+        </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Armin's Specifications. All rights reserved.</p>
-    </div>
-  </footer>
+
     
-          <footer class="footer-page">
-            <div class="footer-container">
-                <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
-                <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
-            </div>          
-          </footer>
+         <!--Footer-->
+
+         <footer class="footer-page">
+              <div class="footer-container">
+                  <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
+                  <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
+              <div class="extra-links">
+                  <a class="footer-link" href="#">Privacy Policy</a>
+                  <a class="footer-link" href="#">Terms Of Use</a>
+                  <a class="footer-link" href="#">Frequently Asked Questions</a>
+              </div>
+              <div style="text-align:center;" class="extra-links-logo">
+                  <a href="#"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
+                  <a href="#"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
+                  <a href="#"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
+                  <a href="#"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
+              </div>
+              </div>          
+        </footer>
     </body>
 </html>
