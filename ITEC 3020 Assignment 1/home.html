@@ -11,6 +11,7 @@
 
 /* welcome message page */
 
+
 .welcome-message-page {
   height:100vh;
   background-color:rgb(17, 16, 16);
@@ -237,6 +238,34 @@
   border: 2px solid rgb(0, 128, 255); 
   transition:0.3s;
 }
+
+@media (max-width:600px) {
+          .introduction-heading, .company-overview-heading, .recent-release-heading {
+              font-size:2rem;
+          }
+
+          .japanese-introduction-heading, .japanese-company-overview-heading, .recent-release-heading-japanese {
+             font-size:1.5rem;
+          }
+          .introduction-paragraph, .company-overview-paragraph, .company-overview-paragraph {
+            font-size:14px;
+          }
+          .welcome-background-text {
+            font-size:3.5rem;
+          }
+          .welcome-background-text-japanese {
+            font-size:2rem;
+
+          }
+          .click-to-action-btn {
+            padding: 8px 24px;
+            font-size:0.9rem;
+          }
+          .recent-releases-container {
+            gap:10px;
+          }
+
+}
 </style>
     </head>
     <body>
@@ -258,7 +287,7 @@
           </header>
 
         <!--Section Video-->
-
+ 
         <section>
             <video class="intro-video" style="display:block;" autoplay muted loop width="100%"><source src="LogoVideo.mp4" type="video/mp4"></video>
         </section>
@@ -314,8 +343,8 @@
 
            <!--Section Video-->
 
-           <section class="tune-video-section">
-              <video style="display:block;" autoplay muted loop width="100%;" class="tune-video">
+           <section style="background-color: black;"" class="tune-video-section">
+              <video style="display:block;" autoplay muted loop width="100%;">
                 <source src="TuningVideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -327,7 +356,7 @@
             <h1 class="recent-release-heading">Recent Releases!</h1>
             <h2 class="recent-release-heading-japanese">最新リリース!</h2>
             <div class="recent-releases-container">
-                <img class="car-image" style="display:block;" src="dc-5.png"></img>
+                <img class="car-image" style="display:block; " src="dc-5.png"></img>
                 <img class="car-image" style="display:block;" src="ek9.png"></img>
                 <img class="car-image" style="display:block;" src="evo-6.png"></img>
                 <img class="car-image" style="display:block;" src="rx-7.png"></img>
