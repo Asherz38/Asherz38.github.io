@@ -65,16 +65,6 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
           }
 
-            .title-page {
-              height:30vh;
-              background-color: rgb(20, 20, 20);
-              display: flex;
-              text-align: center;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
-            }
-
             .services-intro-heading-title {
               color: white;
               font-size: 3rem;
@@ -108,7 +98,7 @@
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center;
-              height: 100vh;
+              height: auto;
               display: flex;
               justify-content: center; 
               align-items: center;     
@@ -116,24 +106,31 @@
               color: white;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
-              padding:0px 40px;
+              padding:200px 80px;
+              border-top: 2px solid white;
+              border-bottom: 2px solid white;
           }
 
           .performance-container {
             column-count: 3;
             line-height: 1.7rem;
+            padding:0 20px;
           }
 
           .performance-title {
             font-size: 1.6rem;
             color: #ffffff;
-            margin-bottom: 0.5rem;
+            padding-bottom: 0.5rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
           }
 
           .icon-image {
             width:100px;
             height:100px;
+            filter: 
+            drop-shadow(0 0 8px rgba(255, 255, 255, 0.7))
+            drop-shadow(0 0 16px rgba(255, 255, 255, 0.5))
+            drop-shadow(0 0 24px rgba(255, 255, 255, 0.3));
           }
 
           /* Aesthetic Enhancements */
@@ -143,7 +140,7 @@
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center;
-              height: 80vh;
+              height: auto;
               display: flex;
               justify-content: center; 
               align-items: center;     
@@ -151,12 +148,17 @@
               color: white;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
-              padding:0px 40px;
+              padding:200px 80px;
+              border-bottom: 2px solid white;
+          }
+          
+          .japanese-title-padding {
+            padding-bottom: 80px;
           }
 
           .enhancements-container  {
               line-height: 1.7rem;
-              max-width: 650px;
+              max-width: 850px;
           }
 
           .enhancements-title {
@@ -164,6 +166,7 @@
             color: #ffffff;
             margin-bottom: 0.5rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top:1rem;
           }
 
           /* Repair */
@@ -173,7 +176,7 @@
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center;
-              height: 80vh;
+              height: auto;
               display: flex;
               justify-content: center; 
               align-items: center;     
@@ -181,12 +184,13 @@
               color: white;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
-              padding:0px 40px;
+              padding:200px 80px;
+              border-bottom: 2px solid white;
           }
 
           .repair-container  {
               line-height: 1.7rem;
-              max-width: 650px;
+              max-width: 1050px;
           }
 
           .repair-title {
@@ -194,6 +198,7 @@
             color: #ffffff;
             margin-bottom: 0.5rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top:1rem;
           }
 
           /* Car Sale */
@@ -203,7 +208,7 @@
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center;
-              height: 80vh;
+              height: auto;
               display: flex;
               justify-content: center; 
               align-items: center;     
@@ -211,12 +216,13 @@
               color: white;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
-              padding:0px 40px;
+              padding:200px 80px;
+              border-bottom: 2px solid white;
           }
 
           .sale-container  {
             line-height: 1.7rem;
-            max-width: 650px;
+            max-width: 700px;
           }
 
           .sale-title {
@@ -224,6 +230,7 @@
             color: #ffffff;
             margin-bottom: 0.5rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top:1rem;
           }
 
           /* Question and Answer */
@@ -233,7 +240,7 @@
               background-repeat: no-repeat;
               background-size: cover;
               background-position: center;
-              height: 80vh;
+              height: auto;
               display: flex;
               justify-content: center; 
               align-items: center;     
@@ -241,12 +248,13 @@
               color: white;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
-              padding:0px 40px;
+              padding:200px 80px;
+              border-bottom: 2px solid white;
           }
 
           .question-container  {
             line-height: 1.7rem;
-            max-width: 650px;
+            max-width: 800px;
           }
 
           .question-title {
@@ -254,9 +262,18 @@
             color: #ffffff;
             margin-bottom: 0.5rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-top:1rem;
           }
 
           @media (max-width: 749px) {
+
+           .service-title {
+            font-size:1rem;
+           }
+
+           .service-description {
+            font-size:0.8rem;
+           }
 
            .header {
               display:flex;
@@ -269,7 +286,7 @@
           }
 
           .title-container {
-            max-width:350px;
+            max-width:700px;
           }
 
           .header-title {
@@ -281,32 +298,45 @@
           }
 
           .services-intro-heading-title {
-              font-size:2rem;
+              font-size:1.3rem;
           }
 
           .services-intro-japanese-title {
-             font-size:1.5rem;
+             font-size:1rem;
+             padding-bottom:20px;
           }
           
           .performance-title {
             padding:10px;
-            font-size:18px;
+            font-size:15px;
             font-weight: bolder;
           }
           .performance-description {
-            font-size:13px;
+            font-size:12px;
             padding-bottom:10px;
           }
           .performance-container {
-          column-count: 1;
+            column-count: 1;
           }
           .icon-image {
             height:50px;
             width:50px;
           }
 
+          .title {
+            font-size:15px;
+          }
+
+          .description {
+            font-size:12px;
+          }
+
           .car-sale-container {
-            max-width:300px;
+            max-width:500px;
+          }
+
+          .japanese-title-padding {
+            padding-bottom: 40px;
           }
           }
 
@@ -338,7 +368,7 @@
             <!-- Header Section -->
             <div class="header">
              <div class="container">
-               <h1 class="header-title">JDM Services Summary</h1>
+               <h1 class="header-title">JDM Services Overview</h1>
                <p class="header-subtitle">Performance. Style. Precision. Customization.</p>
              </div>
            </div>
@@ -383,20 +413,12 @@
            </div>
           </main>
 
-          <!--Performance Upgrade Title Page-->
-
-          <section class="title-page">
-            <div class="title-container">
-              <h1 class="services-intro-heading-title">Performance Upgrades</h1>
-              <h2 class="services-intro-japanese-title">パフォーマンスアップグレード</h2>
-            </div>
-          </section>
-
           <!--Performance Upgrades Page-->
 
-          <!--add respective icons over heading text-->
-
             <section class="performance-upgrades-page">
+              <div class="title-container">
+                <h1 class="services-intro-heading-title">Performance Upgrades</h1>
+                <h2 class="services-intro-japanese-title japanese-title-padding">パフォーマンスアップグレード</h2>
               <div class="performance-container">
                 <img class="icon-image" src="engineIcon.png" alt="Logo Not Loaded">
                 <h1 class="performance-title">JDM Tuning Services</h1>
@@ -416,77 +438,66 @@
                 precision crafted, TIG-welded, and perfectly fitted for peak
                 performance.</p>
                 </div>
+              </div>
             </section>
 
           <!--Aesthetic Enhancements Page-->
 
-          <section class="title-page">
-            <div class="title-container">
-            <h1 class="services-intro-heading-title">Aesthetic Enhancements</h1>
-            <h2 class="services-intro-japanese-title">外観カスタム</h2>
-            </div>
-          </section>
-
           <section class="aesthetic-enhancements-page">
+            <div class="title-container">
+              <h1 class="services-intro-heading-title">Aesthetic Enhancements</h1>
+              <h2 class="services-intro-japanese-title japanese-title-padding">外観カスタム</h2>
             <div class="enhancements-container">
               <img class="icon-image" src="fenderIcon.png" alt="Logo Not Loaded">
-            <h1 class="service-title">Wide-Body Kit Installs</h1>
-            <p class="service-description">Transform your ride with sleek, performance-enhancing wide-body
+            <h1 class="service-title title">Wide-Body Kit Installs</h1>
+            <p class="service-description description">Transform your ride with sleek, performance-enhancing wide-body
               kits. We handle full fitment, paint-matching, and
               customization—giving your JDM car a race-ready stance and
               aggressive aesthetic.</p>
+            </div>
             </div>
         </section>
 
           <!--General Maintenance & Repair Page-->
 
-          <section class="title-page">
-            <div class="title-container">
-            <h1 class="services-intro-heading-title">General Maintenance & Repair</h1>
-            <h2 class="services-intro-japanese-title">一般メンテナンス & 修理</h2>
-            </div>
-          </section>
-
           <section class="general-maintenance-and-repair-page">
+            <div class="title-container">
+              <h1 class="services-intro-heading-title">General Maintenance & Repair</h1>
+              <h2 class="services-intro-japanese-title japanese-title-padding">一般メンテナンス & 修理</h2>
             <div class="repair-container">
               <img class="icon-image" src="repairIcon.png" alt="Logo Not Loaded"> 
-            <h1 class="repair-title">Repair Services</h1>
-            <p class="repair-description">Whether it’s engine trouble, drivetrain issues, or electrical diagnostics, our expert technicians treat every vehicle with the same meticulous care we bring to our custom builds. We use high-quality OEM and performance parts, and every repair is handled with a commitment to longevity and driving feel. From JDM legends to European performance machines, we make sure your car not only runs — it thrives.</p>
+            <h1 class="repair-title title">Repair Services</h1>
+            <p class="repair-description description">Whether it’s engine trouble, drivetrain issues, or electrical diagnostics, our expert technicians treat every vehicle with the same meticulous care we bring to our custom builds. We use high-quality OEM and performance parts, and every repair is handled with a commitment to longevity and driving feel. From JDM legends to European performance machines, we make sure your car not only runs — it thrives.</p>
+          </div>
           </div>
         </section>
 
   
           <!--JDM Stock Car Sales Page-->
 
-          <section class="title-page">
-            <div class="title-container car-sale-container">
-            <h1 class="services-intro-heading-title">JDM Stock Car Sales</h1>
-            <h2 class="services-intro-japanese-title">輸入車</h2>
-            </div>
-          </section>
-
           <section class="JDM-stock-car-sales-page">
+            <div class="title-container car-sale-container">
+              <h1 class="services-intro-heading-title">JDM Stock Car Sales</h1>
+              <h2 class="services-intro-japanese-title japanese-title-padding">輸入車</h2>
             <div class="sale-container">
               <img class="icon-image" src="fenderIcon.png" alt="Logo Not Loaded">
-            <h1 class="sale-title">Selling Stock JDM Vehicles</h1>
-            <p class="sale-description">We take pride in offering a curated selection of authentic, stock JDM vehicles — untouched icons that embody the raw spirit of Japanese engineering. From low-mileage imports to well-preserved classics, each car is carefully sourced, legally imported, and fully inspected to meet our strict quality standards. Whether you're chasing nostalgia or beginning your JDM journey, our lineup delivers original, unmodified legends straight from Japan. Visit our <b>Products</b> page to explore our current inventory and secure a piece of automotive history.</p>
+            <h1 class="sale-title title">Selling Stock JDM Vehicles</h1>
+            <p class="sale-description description">We take pride in offering a curated selection of authentic, stock JDM vehicles — untouched icons that embody the raw spirit of Japanese engineering. From low-mileage imports to well-preserved classics, each car is carefully sourced, legally imported, and fully inspected to meet our strict quality standards. Whether you're chasing nostalgia or beginning your JDM journey, our lineup delivers original, unmodified legends straight from Japan. Visit our <b>Products</b> page to explore our current inventory and secure a piece of automotive history.</p>
           </div>
+        </div>
         </section>
 
           <!--Vehicle Q&A Assistance Page-->
-          
-          <section class="title-page">
-            <div class="title-container">
-            <h1 class="services-intro-heading-title">Vehicle Q&A Assistance</h1>
-            <h2 class="services-intro-japanese-title">車両に関するQ&Aサポート</h2>
-            </div>
-          </section>
 
           <section class="vehicle-QA-assistance-page">
+            <div class="title-container">
+              <h1 class="services-intro-heading-title">Vehicle Q&A Assistance</h1>
+              <h2 class="services-intro-japanese-title japanese-title-padding">車両に関するQ&Aサポート</h2>
             <div class="question-container">
             <img class="icon-image" src="questionIcon.png" alt="Logo Not Loaded">
-            <h1 class="question-title">Q&A For Vehicles</h1>
-            <p class="question-description">Have questions about a specific vehicle, import process, or customization options? Our team is here to help. Whether you're curious about service history, engine specs, or registration requirements, we’re happy to provide the answers you need to make an informed decision. For quick responses, check out our <b>Frequently Asked Questions</b> section at the bottom of the page. Still need help? Use the <b>Contact Us</b> form at the top of the page to reach out directly — we’re passionate about cars and even more passionate about helping you find the right one.</p>
+            <h1 class="question-title title">Q&A For Vehicles</h1>
+            <p class="question-description description">Have questions about a specific vehicle, import process, or customization options? Our team is here to help. Whether you're curious about service history, engine specs, or registration requirements, we’re happy to provide the answers you need to make an informed decision. For quick responses, check out our <b>Frequently Asked Questions</b> section at the bottom of the page. Still need help? Use the <b>Contact Us</b> form at the top of the page to reach out directly — we’re passionate about cars and even more passionate about helping you find the right one.</p>
+            </div>
             </div>
         </section>
 
@@ -504,10 +515,10 @@
                   <a class="footer-link" href="#">Frequently Asked Questions</a>
               </div>
               <div style="text-align:center;" class="extra-links-logo">
-                  <a href="#"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="#"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="#"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="#"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
+                  <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
+                  <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
+                  <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
+                  <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
               </div>
               </div>          
         </footer>
