@@ -6,6 +6,183 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet"  href="style.css">
     </head>
+    <style>
+
+       * {
+        box-sizing: border-box;
+      }
+
+      /* Contact Page */
+      .contact-container {
+        display:flex;
+        justify-content: space-between;
+        padding: 40px;
+        gap:40px;
+        flex-wrap:wrap;
+        align-items:stretch;
+        background-color: rgb(32, 32, 32);
+        color:white;
+      }
+
+      .contact-information {
+        flex: 1;
+        max-width: 50%;
+        text-align: center;
+      }
+
+      .contact-heading-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .contact-us-icon {
+        filter: 
+        drop-shadow(0 0 8px rgba(255, 255, 255, 0.7))
+        drop-shadow(0 0 16px rgba(255, 255, 255, 0.5))
+        drop-shadow(0 0 24px rgba(255, 255, 255, 0.3));
+      }
+
+      .contact-title {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:40px;
+        text-transform: uppercase;
+        font-weight:bolder;
+        text-shadow: 
+        0 0 8px rgba(255, 255, 255, 0.7),
+        0 0 16px rgba(255, 255, 255, 0.5),
+        0 0 24px rgba(255, 255, 255, 0.3);
+        padding-bottom:5px;
+      }
+
+      .contact-description {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size:15px;
+        max-width: 700px;
+        padding-bottom:30px;
+        text-align: center;
+      }
+
+      .map-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%; 
+      }
+
+      .contact-form {
+        flex:1;
+        max-width:50%;
+      }
+
+      .contact-information, .contact-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin:0.2vw 0px;
+        border: 1px solid white;
+        border-radius: 4px;
+      }
+
+      .contact-form input[type="submit"] {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 16px 36px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: 8px;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid white;
+      }
+
+      .contact-form input[type="submit"]:hover {
+        background-color: rgb(0, 128, 255); 
+        color: white;       
+        transform:scale(1.05);  
+        border: 1px solid rgb(0, 128, 255); 
+      }
+
+      .social-media-page {
+        height:auto;
+        background-color: black;
+      }
+
+      .social-media-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap:10px;
+        width: 100%;
+      }
+
+      .social-media-heading {
+        font-size:50px;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .social-media-description {
+        padding-bottom:15px;
+      }
+
+      .logo {
+        height:75px;
+        width:75px;
+        margin-top:15px;
+      }
+
+      @media (max-width:768px) {
+        .contact-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .contact-form {
+          max-width: 100%;
+          width: 100%;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+          width: 100%;
+        }
+
+        .contact-information {
+          max-width: 100%;
+        }
+        
+        .social-media-page {
+          height:auto;
+        }
+
+        .social-media-container {
+          gap:20px;
+        }
+
+        .social-media-heading {
+          font-size:5vw;
+        }
+
+        .logo {
+          height:50px;
+          width:50px;
+          margin:10px;
+        }
+        .social-media-description {
+          font-size:3vw;
+        }
+      }
+
+      
+    </style>
     <body>
 
           <!--Navbar-->
@@ -22,7 +199,67 @@
               </div>
             </nav>
           </header>
-    
+
+           <!--Section Video-->
+
+        <section>
+            <video class="intro-video" style="display:block;" autoplay muted loop width="100%"><source src="ContactUsVideo.mp4" type="video/mp4"></video>
+        </section>
+
+          <!--Contact Page-->
+          <section class="contact-page">
+              <div class="contact-container">
+                <div class="contact-information">
+                  <div class="contact-heading-group">
+                  <img class="contact-us-icon" src="contactUsIcon.png" style="width:100px; height:100px;">
+                <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif" class="contact-title">Contact Us</h1>
+                <p style="font-family:Verdana, Geneva, Tahoma, sans-serif" class="contact-description">We're here to help and answer any questions you might have. We look forward to hearing from you!</p>
+              </div>
+                <div class="map-container">
+                  <iframe
+                  src="https://www.google.com/maps/d/u/0/embed?mid=1tbmEER8N4MRxYuHiIUbd7QAW7bCfhNQ&ehbc=2E312F"
+                    width="100%;"
+                    max-height="15vh"
+                    height="100%;"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                </div>
+     
+                <form class="contact-form" action="https://formsubmit.co/arminsspecifications@gmail.com" method="post">
+                  <label style="font-family:Verdana, Geneva, Tahoma, sans-serif" for="name">Name</label><br>
+                  <input pattern="^[A-Za-z]+(?:\s[A-Za-z]+)+$"  title="Enter your full name (first and last)" placeholder="Type in your full name (ex: John Doe)" type="text" id="name" name="name" required><br><br>
+
+                  <label style="font-family:Verdana, Geneva, Tahoma, sans-serif" for="email">Email</label><br>
+                  <input placeholder="Type in your email address (ex: johndoe@gmail.com)" type="email" id="email" name="email" required><br><br>
+
+                  <label style="font-family:Verdana, Geneva, Tahoma, sans-serif;" for="subject">Subject</label><br>
+                  <input pattern="^&quot;.*\&quot;$" title="Subject must be wrapped in double quotes" placeholder="Type in your question in quotations (ex: ''Question/Message About Stage 4 Tuning'')" type="text" id="subject" name="subject" required><br><br>
+
+                  <label style="font-family:Verdana, Geneva, Tahoma, sans-serif" for="message">Message</label><br>
+                  <textarea title="Enter detailed message (min 20 characters)"  placeholder='Type in your message (ex: What are your costs for stage 4 tuning?)'  minlength="20" id="message" name="message" rows="5" required style="height:15vh; resize:none;"></textarea><br><br>
+
+                    <input type="submit" value="Send">
+                  </form>
+                </div>
+          </section>
+
+          <!--Social Media Section-->
+
+          <section class="social-media-page">
+            <h1 class="social-media-heading" style="color:white; text-align:center; padding:20px 0px;">Social Media</h1>
+            <div style="text-align:center;" class="extra-links-logo social-media-container">
+              <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
+              <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
+              <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
+              <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
+            </div>
+            <h2 style="color:white; text-align:center; padding-top:20px; text-transform:uppercase; font-weight:bolder; font-family:Verdana, Geneva, Tahoma, sans-serif;" class="social-media-description">Connect With Us Here!</h2>
+          </section>
+
+
          <!--Footer-->
 
          <footer class="footer-page">
@@ -35,10 +272,10 @@
                   <a class="footer-link" href="#">Frequently Asked Questions</a>
               </div>
               <div style="text-align:center;" class="extra-links-logo">
-                <a href="#"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
-                <a href="#"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
-                <a href="#"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
-                <a href="#"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
+                <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
+                <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
+                <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
+                <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
               </div>
           </div>          
         </footer>
