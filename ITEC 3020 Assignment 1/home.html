@@ -2,319 +2,348 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet"  href="style.css">
+
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-/* welcome message page */
+    /* welcome message page */
 
 
-.welcome-message-page {
-  height:auto;
-  background-color:rgb(17, 16, 16);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 32px;
-}
+    .welcome-message-page {
+      height: auto;
+      background-color: rgb(17, 16, 16);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 32px;
+    }
 
-.welcome-container {
-  padding: 0px 24px;
-  margin: 0px auto;
-  width:100%;
-  max-width:700px;
-}
+    .welcome-container {
+      padding: 0px 24px;
+      margin: 0px auto;
+      width: 100%;
+      max-width: 700px;
+    }
 
-.introduction-heading {
-  color:white;
-  font-size:2.8vw;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
-  font-weight: 900;
-  text-shadow: 
-  0 0 8px rgba(255, 255, 255, 0.7),
-  0 0 16px rgba(255, 255, 255, 0.5),
-  0 0 24px rgba(255, 255, 255, 0.3);
-}
+    .introduction-heading {
+      color: white;
+      font-size: 2.8vw;
+      text-transform: uppercase;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bolder;
+      font-weight: 900;
+      text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.7),
+        0 0 16px rgba(255, 255, 255, 0.5),
+        0 0 24px rgba(255, 255, 255, 0.3);
+    }
 
-.japanese-introduction-heading {
-  color:white;
-  font-size: 1vw;
-  text-align:center;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
-  padding-bottom:30px;
-  padding-top:7.5px;
-  font-weight: 900;
-  text-shadow: 
-  0 0 8px rgba(255, 255, 255, 0.7),
-  0 0 16px rgba(255, 255, 255, 0.5),
-  0 0 24px rgba(255, 255, 255, 0.3);
-}
+    .japanese-introduction-heading {
+      color: white;
+      font-size: 1vw;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bolder;
+      padding-bottom: 30px;
+      padding-top: 7.5px;
+      font-weight: 900;
+      text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.7),
+        0 0 16px rgba(255, 255, 255, 0.5),
+        0 0 24px rgba(255, 255, 255, 0.3);
+    }
 
-.introduction-paragraph {
-  color:white;
-  font-size:1rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.7rem;
-}
+    .introduction-paragraph {
+      color: white;
+      font-size: 1rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      line-height: 1.7rem;
+    }
 
-/* tagline page */
+    /* tagline page */
 
-.welcome-background-image {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('welcome-page-gtr-r32.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  text-align: center;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bolder;
-  padding:0px 40px;
-}
-  
-.welcome-content {
-  max-width: 800px;
-}
+    .welcome-background-image {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('welcome-page-gtr-r32.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bolder;
+      padding: 0px 40px;
+    }
 
-.tagline {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
-  
-.welcome-background-text {
-  font-size: 5rem;
-  margin-bottom: 8px;
-  font-weight: 900;
-  text-shadow: 
-  0 0 8px rgba(255, 255, 255, 0.7),
-  0 0 16px rgba(255, 255, 255, 0.5),
-  0 0 24px rgba(255, 255, 255, 0.3);
-}
+    .welcome-content {
+      max-width: 800px;
+    }
 
-.welcome-background-text-japanese {
-  font-size: 2.5rem;
-  margin-bottom:24px;
-  font-weight: 900;
-  text-shadow: 
-  0 0 8px rgba(255, 255, 255, 0.7),
-  0 0 16px rgba(255, 255, 255, 0.5),
-  0 0 24px rgba(255, 255, 255, 0.3);
-}
+    .tagline {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      color: #ffffff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+    }
 
-.click-to-action-btn {
-  background-color: rgb(0, 0, 0); 
-  color: white;
-  padding: 16px 36px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 8px;
-  letter-spacing: 1.5px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin: 5px 0;
-  border: 1px solid white;
-}
+    .welcome-background-text {
+      font-size: 5rem;
+      margin-bottom: 8px;
+      font-weight: 900;
+      text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.7),
+        0 0 16px rgba(255, 255, 255, 0.5),
+        0 0 24px rgba(255, 255, 255, 0.3);
+    }
 
-.click-to-action-btn:hover {
-  background-color: rgb(0, 128, 255); 
-  color: white;       
-  transform:scale(1.05);          
-  border: 1px solid rgb(0, 128, 255);        
-}
+    .welcome-background-text-japanese {
+      font-size: 2.5rem;
+      margin-bottom: 24px;
+      font-weight: 900;
+      text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.7),
+        0 0 16px rgba(255, 255, 255, 0.5),
+        0 0 24px rgba(255, 255, 255, 0.3);
+    }
 
-  /* company overview page */
+    .click-to-action-btn {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      padding: 16px 36px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      border-radius: 8px;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 5px 0;
+      border: 1px solid white;
+    }
 
-.company-overview-message-page {
-  background-color: rgb(10, 9, 9);
-  padding: 80px 32px;
-  text-align: center;
-  color: white;
-  height:auto;
-}
-  
-.company-overview-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-  
-.company-overview-heading {
-  font-size: 42px;
-  text-transform: uppercase;
-  color: white;
-  padding-bottom:20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 900;
-  text-shadow: 
-  0 0 8px rgba(255, 255, 255, 0.7),
-  0 0 16px rgba(255, 255, 255, 0.5),
-  0 0 24px rgba(255, 255, 255, 0.3);
-}
-  
-.japanese-company-overview-heading {
-  font-size: 24px;
-  color: white;
-  margin-bottom: 20px;
-  font-weight: 500;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 900;
-  text-shadow: 
-  0 0 8px rgba(255, 255, 255, 0.7),
-  0 0 16px rgba(255, 255, 255, 0.5),
-  0 0 24px rgba(255, 255, 255, 0.3);
-}
-  
-.company-overview-paragraph {
-  font-size: 18px;
-  line-height: 1.7rem;
-  color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    .click-to-action-btn:hover {
+      background-color: rgb(0, 128, 255);
+      color: white;
+      transform: scale(1.05);
+      border: 1px solid rgb(0, 128, 255);
+    }
 
-@media (max-width:968px) {
-          .introduction-heading, .company-overview-heading {
-              font-size:6.7vw;
-          }
+    /* company overview page */
 
-          .japanese-introduction-heading, .japanese-company-overview-heading {
-             font-size:5.5vw;
-          }
-          .introduction-paragraph, .company-overview-paragraph {
-            font-size:3.2vw;
-          }
-          .welcome-background-text {
-            font-size:12.1vw;
-          }
-          .welcome-background-text-japanese {
-            font-size:4.1vw;
-          }
-}
-</style>
-    </head>
-    <body>
+    .company-overview-message-page {
+      background-color: rgb(10, 9, 9);
+      padding: 80px 32px;
+      text-align: center;
+      color: white;
+      height: auto;
+    }
 
-        <!--Header Nav-Bar-->
+    .company-overview-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-        <header>
-            <nav class="nav-bar">
-              <a href="home.html"><img class="logo" src="BrandLogo.png" alt="Logo Not Loaded"></a>
-              <div class="nav-links">
-                <a class="webpage-link" href="home.html">HOME</a>
-                <a class="webpage-link" href="about.html">ABOUT US</a>
-                <a class="webpage-link" href="products.html">PRODUCTS</a>
-                <a class="webpage-link" href="services.html">SERVICES</a>
-                <a class="webpage-link" href="news.html">NEWS</a>
-                <a class="webpage-link" href="contact.html">CONTACT US</a>
-              </div>
-            </nav>
-          </header>
+    .company-overview-heading {
+      font-size: 42px;
+      text-transform: uppercase;
+      color: white;
+      padding-bottom: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 900;
+      text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.7),
+        0 0 16px rgba(255, 255, 255, 0.5),
+        0 0 24px rgba(255, 255, 255, 0.3);
+    }
 
-        <!--Section Video-->
- 
-        <section>
-            <video class="intro-video" style="display:block;" autoplay muted loop width="100%"><source src="LogoVideo.mp4" type="video/mp4"></video>
-        </section>
+    .japanese-company-overview-heading {
+      font-size: 24px;
+      color: white;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 900;
+      text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.7),
+        0 0 16px rgba(255, 255, 255, 0.5),
+        0 0 24px rgba(255, 255, 255, 0.3);
+    }
 
-        <!--Section Welcome Message-->
+    .company-overview-paragraph {
+      font-size: 18px;
+      line-height: 1.7rem;
+      color: #ffffff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 
-        <section class="welcome-message-page">
-            <div class="welcome-container">
-              <h1 class="introduction-heading">Welcome To Armin's Specifications</h1>
-                <h2 class="japanese-introduction-heading">スペシフィケーションズ</h2>
-                    <p class = "introduction-paragraph">We tune, restore, and sell legendary cars for drivers who expect more — more power, more precision, more connection to the road. 
-                      
-                      <br>
-                      <br>
-                    Every vehicle we craft is a blend of heritage and high performance, brought back to life with obsessive attention to detail and a deep respect for automotive legacy.
+    @media (max-width:968px) {
 
-                      <br>
-                      <br>
-                    From iconic classics to modern performance builds, our mission is simple: create machines that stir the soul and command the road. This isn’t just about driving — it’s about feeling every turn, hearing every note of the engine, and owning a car that’s truly one of a kind.</p>
-                </div>
-          </section>
+      .introduction-heading,
+      .company-overview-heading {
+        font-size: 6.7vw;
+      }
 
-          <!--Section Tagline Message-->
-        
-        <section class="welcome-background-image">
-            <div class="welcome-content">
-              <p class="tagline">TAGLINE</p>
-                <h1 class="welcome-background-text">TUNED FOR LEGACY</h1>
-                <h2 class="welcome-background-text-japanese">伝統のためのチューニング</h2>
-                <button class="click-to-action-btn btn"><a style="text-decoration:none; color:white; text-transform:uppercase;" href="products.html">Explore Our Car Sales</a></button>
-            </div>
-          </section> 
+      .japanese-introduction-heading,
+      .japanese-company-overview-heading {
+        font-size: 5.5vw;
+      }
 
-          <!--Company Overview Page-->
+      .introduction-paragraph,
+      .company-overview-paragraph {
+        font-size: 3.2vw;
+      }
 
-          <section class="company-overview-message-page">
-            <div class="company-overview-container">
-              <h1 class="company-overview-heading">Company Overview</h1>
-                <h2 class="japanese-company-overview-heading">私たちの事業内容</h2>
-                    <p class = "company-overview-paragraph">At Armin’s Specifications, we specialize in high-performance tuning and rare vehicle sourcing. Whether it’s restoring a classic JDM icon or pushing modern builds to their limits, we deliver precision-crafted machines built for legacy. Our passion drives everything — from ECU remaps and widebody kits to curated car sales for true enthusiasts.
+      .welcome-background-text {
+        font-size: 12.1vw;
+      }
 
-                      <br>
-                      <br>
+      .welcome-background-text-japanese {
+        font-size: 4.1vw;
+      }
+    }
+  </style>
+</head>
 
-                    We don’t just modify cars — we elevate them. Every build is engineered with intention, blending modern performance upgrades with timeless style. Our workshop is a space where innovation meets tradition, and where every detail, from suspension geometry to intake acoustics, is fine-tuned for peak driving emotion.
+<body>
 
-                      <br>
-                      <br>
-                      
-                    For us, it’s not about mass production — it’s about meaningful connection. We work closely with each client to understand their vision, their story, and the kind of machine that truly speaks to them. Because at the end of the day, we don’t just sell cars. We build legends.</p>
-                </div>
-          </section>
+  <!--Header Nav-Bar-->
 
-           <!--Section Video-->
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html"><img class="logo" src="BrandLogo.png" alt="Logo Not Loaded"></a>
+      <div class="nav-links">
+        <a class="webpage-link" href="home.html">HOME</a>
+        <a class="webpage-link" href="about.html">ABOUT US</a>
+        <a class="webpage-link" href="products.html">PRODUCTS</a>
+        <a class="webpage-link" href="services.html">SERVICES</a>
+        <a class="webpage-link" href="news.html">NEWS</a>
+        <a class="webpage-link" href="contact.html">CONTACT US</a>
+      </div>
+    </nav>
+  </header>
 
-           <section style="background-color: black;"" class="tune-video-section">
-              <video style="display:block;" autoplay muted loop width="100%;">
-                <source src="TuningVideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-          </section>
+  <!--Section Video-->
 
-          <!--Footer-->
+  <section>
+    <video class="intro-video" style="display:block;" autoplay muted loop width="100%">
+      <source src="LogoVideo.mp4" type="video/mp4">
+    </video>
+  </section>
 
-          <footer class="footer-page">
-            <div class="footer-container">
-                <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
-                <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
-                <div class="extra-links">
-                    <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
-                    <a class="footer-link" href="#">Terms Of Use</a>
-                    <a class="footer-link" href="#">Frequently Asked Questions</a>
-                </div>
-                <div style="text-align:center;" class="extra-links-logo">
-                  <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
-                </div>
-            </div>          
-          </footer>
-        
-    </body>
+  <!--Section Welcome Message-->
+
+  <section class="welcome-message-page">
+    <div class="welcome-container">
+      <h1 class="introduction-heading">Welcome To Armin's Specifications</h1>
+      <h2 class="japanese-introduction-heading">スペシフィケーションズ</h2>
+      <p class="introduction-paragraph">We tune, restore, and sell legendary cars for drivers who expect more — more
+        power, more precision, more connection to the road.
+
+        <br>
+        <br>
+        Every vehicle we craft is a blend of heritage and high performance, brought back to life with obsessive
+        attention to detail and a deep respect for automotive legacy.
+
+        <br>
+        <br>
+        From iconic classics to modern performance builds, our mission is simple: create machines that stir the soul and
+        command the road. This isn’t just about driving — it’s about feeling every turn, hearing every note of the
+        engine, and owning a car that’s truly one of a kind.
+      </p>
+    </div>
+  </section>
+
+  <!--Section Tagline Message-->
+
+  <section class="welcome-background-image">
+    <div class="welcome-content">
+      <p class="tagline">TAGLINE</p>
+      <h1 class="welcome-background-text">TUNED FOR LEGACY</h1>
+      <h2 class="welcome-background-text-japanese">伝統のためのチューニング</h2>
+      <button class="click-to-action-btn btn"><a style="text-decoration:none; color:white; text-transform:uppercase;"
+          href="products.html">Explore Our Car Sales</a></button>
+    </div>
+  </section>
+
+  <!--Company Overview Page-->
+
+  <section class="company-overview-message-page">
+    <div class="company-overview-container">
+      <h1 class="company-overview-heading">Company Overview</h1>
+      <h2 class="japanese-company-overview-heading">私たちの事業内容</h2>
+      <p class="company-overview-paragraph">At Armin’s Specifications, we specialize in high-performance tuning and rare
+        vehicle sourcing. Whether it’s restoring a classic JDM icon or pushing modern builds to their limits, we deliver
+        precision-crafted machines built for legacy. Our passion drives everything — from ECU remaps and widebody kits
+        to curated car sales for true enthusiasts.
+
+        <br>
+        <br>
+
+        We don’t just modify cars — we elevate them. Every build is engineered with intention, blending modern
+        performance upgrades with timeless style. Our workshop is a space where innovation meets tradition, and where
+        every detail, from suspension geometry to intake acoustics, is fine-tuned for peak driving emotion.
+
+        <br>
+        <br>
+
+        For us, it’s not about mass production — it’s about meaningful connection. We work closely with each client to
+        understand their vision, their story, and the kind of machine that truly speaks to them. Because at the end of
+        the day, we don’t just sell cars. We build legends.
+      </p>
+    </div>
+  </section>
+
+  <!--Section Video-->
+
+  <section style="background-color: black;"" class=" tune-video-section">
+    <video style="display:block;" autoplay muted loop width="100%;">
+      <source src="TuningVideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!--Footer-->
+
+  <footer class="footer-page">
+    <div class="footer-container">
+      <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
+      <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.
+      </p>
+      <div class="extra-links">
+        <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
+        <a class="footer-link" href="#">Terms Of Use</a>
+        <a class="footer-link" href="#">Frequently Asked Questions</a>
+      </div>
+      <div style="text-align:center;" class="extra-links-logo">
+        <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png"
+            alt="Logo Not Loaded"></a>
+        <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo"
+            src="instagramLogo.png" alt="Logo Not Loaded"></a>
+        <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo"
+            src="linkedinLogo.png" alt="Logo Not Loaded"></a>
+        <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo"
+            src="githubLogo.png" alt="Logo Not Loaded"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
-
