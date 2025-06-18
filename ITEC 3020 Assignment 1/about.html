@@ -1,205 +1,230 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet"  href="style.css">
-        <style>
 
-          * {
-              margin:0;
-              padding:0;
-              box-sizing:border-box;
-          }
+<head>
+  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-          body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #f4f4f4;
-            transition: 0.3s;
-          }
-      
-          .about-container {
-            background-color: rgb(21, 19, 19);
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(255, 90, 30, 0.2);
-            width:100%;
-            text-align: center;
-          }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f4f4f4;
+      transition: 0.3s;
+    }
 
-          .about-page, .mission-page {
-            background-color: black;
-          }
+    .about-container {
+      background-color: rgb(21, 19, 19);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 90, 30, 0.2);
+      width: 100%;
+      text-align: center;
+    }
 
-          .core-values-page {
-            background-color: black;
-          }
-      
-          .about-title, .about-subtitle {
-            color: #ffffff;
-            text-align: center;
-            text-transform: uppercase;
-          }
-      
-          .about-title {
-            font-size: 3rem;
-            text-align: center;
-            padding: 0px 30px;
-            margin: 0 auto;
-            max-width:800px;
-          }
-      
-          .about-subtitle {
-            font-size: 2rem;
-            padding: 20px 30px;
-          }
-      
-          .about-description {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: #ddd;
-            max-width:550px;
-            text-align: center;
-            margin: 0 auto;
-          }
+    .about-page,
+    .mission-page {
+      background-color: black;
+    }
 
-          .about-list {
-            text-align: center;
-            padding: 0px 25px;
-          }
-      
-          .team-image {
-            display: block;
-            width: 100%;
-            border-radius: 10px;
-            transition: 0.5s;
-            border:1px solid white;
-            overflow:hidden;
-            margin: 0 auto;
-            max-width:550px;
-          }
-      
-          .team-image:hover {
-            transform: scale(1.05);
-            border:3px solid rgb(0, 128, 255);
-          }
-      
-          @media (max-width: 968px) {
-            .container {
-              padding:20px;
-            }
-      
-            .about-title {
-              font-size: 28px;
-            }
-      
-            .about-subtitle {
-              font-size: 20px;
-            }
-            .team-image {
-              width:90%;
-            }
-            .about-list-item {
-              font-size:1rem;
-            }
-          }
-        </style>
-    </head>
-    <body>
-      
-       <!--Header Nav-Bar-->
+    .core-values-page {
+      background-color: black;
+    }
 
-       <header>
-        <nav class="nav-bar">
-          <a href="home.html"><img class="logo" src="BrandLogo.png" alt="Logo Not Loaded"></a>
-          <div class="nav-links">
-            <a class="webpage-link" href="home.html">HOME</a>
-            <a class="webpage-link" href="about.html">ABOUT US</a>
-            <a class="webpage-link" href="products.html">PRODUCTS</a>
-            <a class="webpage-link" href="services.html">SERVICES</a>
-            <a class="webpage-link" href="news.html">NEWS</a>
-            <a class="webpage-link" href="contact.html">CONTACT US</a>
-          </div>
-        </nav>
-      </header>
+    .about-title,
+    .about-subtitle {
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+    }
 
-      <!--Section Video-->
+    .about-title {
+      font-size: 3rem;
+      text-align: center;
+      padding: 0px 30px;
+      margin: 0 auto;
+      max-width: 800px;
+    }
 
-      <section>
-        <video class="intro-video" style="display:block;" autoplay muted loop width="100%"><source src="AboutUsVideo.mp4" type="video/mp4"></video>
-    </section>
+    .about-subtitle {
+      font-size: 2rem;
+      padding: 20px 30px;
+    }
 
-      <!--About Page-->
+    .about-description {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #ddd;
+      max-width: 550px;
+      text-align: center;
+      margin: 0 auto;
+    }
 
-      <section class="about-page">
-      <div class="about-container">
-        <h1 style="padding-top:40px;" class="about-title">About Armin’s Specifications</h1>
-        <h2 style="text-align:center; font-size:2rem;">アルミンのスペックについて</h2>
-        <h2 style="padding-top:40px;" class="about-subtitle">Company Overview</h2>
-        <p class="about-description">
-          Armin’s Specifications is a premier automotive modification company fueled by a passion for JDM performance and culture.
-          We provide expert craftsmanship in:
-        </p><br>
-        <ul style="padding-bottom:40px;"  class="about-list">
-          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Advanced</strong> engine tuning solutions</li>
-          <br><br>
-          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Custom</strong> widebody conversions</li>
-          <br><br>
-          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Precision</strong> exhaust fabrication</li>
-          <br><br>
-          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Suspension</strong> upgrades and enhancements</li>
-          <br><br>
-          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Sourcing</strong> and selling authentic, stock JDM vehicles</li>
-        </ul>
-      </section>
+    .about-list {
+      text-align: center;
+      padding: 0px 25px;
+    }
 
-      <section class="mission-page">
-        <h2 style="padding-top:40px;" class="about-subtitle">Our Mission</h2>
-        <p style="padding-bottom:40px;" class="about-description">
-          Our mission is to empower automotive enthusiasts by transforming their <strong style="color:white; font-weight:bolder;">visions</strong> into <strong style="color:white; font-weight:bolder;">reality</strong>. Through performance tuning and
-          style-focused upgrades, we deliver customized JDM experiences while maintaining authenticity and reliability. From sourcing rare imports
-          to fully custom builds, our goal is excellence in every detail.
-        </p>
-        <h2 class="about-subtitle">Our Team</h2>
-        <ul class="about-list">
-          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Arminder Purewal</strong> – Founder & Performance Specialist</li><br><br>
-          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Asher Zaidi</strong> – Custom Design & Fabrication Lead</li><br><br>
-        </ul>
-        <img src="team.jpg" alt="The Armin's Specifications Team" class="team-image"/><br><br>
-      </section>
+    .team-image {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.5s;
+      border: 1px solid white;
+      overflow: hidden;
+      margin: 0 auto;
+      max-width: 550px;
+    }
 
-      <section class="core-values-page">
-        <h2 class="about-subtitle">Core Values</h2>
-        <ul style="padding-bottom:40px;" class="about-list">
-          <li class="about-list-item"><strong>Craftsmanship:</strong> Precision and detail in every modification</li><br><br>
-          <li class="about-list-item"><strong>Authenticity:</strong> Honoring the heritage of JDM culture</li><br><br>
-          <li class="about-list-item"><strong>Passion:</strong> Building cars that reflect each client’s dream</li><br><br>
-          <li class="about-list-item"><strong>Trust:</strong> Delivering consistent performance and reliability</li>
-        </ul>
+    .team-image:hover {
+      transform: scale(1.05);
+      border: 3px solid rgb(0, 128, 255);
+    }
+
+    @media (max-width: 968px) {
+      .container {
+        padding: 20px;
+      }
+
+      .about-title {
+        font-size: 28px;
+      }
+
+      .about-subtitle {
+        font-size: 20px;
+      }
+
+      .team-image {
+        width: 90%;
+      }
+
+      .about-list-item {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Header Nav-Bar-->
+
+  <header>
+    <nav class="nav-bar">
+      <a href="index.html"><img class="logo" src="BrandLogo.png" alt="Logo Not Loaded"></a>
+      <div class="nav-links">
+        <a class="webpage-link" href="home.html">HOME</a>
+        <a class="webpage-link" href="about.html">ABOUT US</a>
+        <a class="webpage-link" href="products.html">PRODUCTS</a>
+        <a class="webpage-link" href="services.html">SERVICES</a>
+        <a class="webpage-link" href="news.html">NEWS</a>
+        <a class="webpage-link" href="contact.html">CONTACT US</a>
       </div>
-    </section>
+    </nav>
+  </header>
 
-     <!--Footer-->
+  <!--Section Video-->
 
-     <!--Footer-->
+  <section>
+    <video class="intro-video" style="display:block;" autoplay muted loop width="100%">
+      <source src="AboutUsVideo.mp4" type="video/mp4">
+    </video>
+  </section>
 
-     <footer class="footer-page">
-      <div class="footer-container">
-          <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
-          <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
-          <div class="extra-links">
-              <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
-              <a class="footer-link" href="termsofuse.html">Terms Of Use</a>
-              <a class="footer-link" href="faq.html">Frequently Asked Questions</a>
-          </div>
-          <div style="text-align:center;" class="extra-links-logo">
-            <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
-            <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
-            <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
-            <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
-          </div>
-      </div>          
-    </footer>
+  <!--About Page-->
 
-    </body>
+  <section class="about-page">
+    <div class="about-container">
+      <h1 style="padding-top:40px;" class="about-title">About Armin’s Specifications</h1>
+      <h2 style="text-align:center; font-size:2rem;">アルミンのスペックについて</h2>
+      <h2 style="padding-top:40px;" class="about-subtitle">Company Overview</h2>
+      <p class="about-description">
+        Armin’s Specifications is a premier automotive modification company fueled by a passion for JDM performance and
+        culture.
+        We provide expert craftsmanship in:
+      </p><br>
+      <ul style="padding-bottom:40px;" class="about-list">
+        <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Advanced</strong> engine tuning
+          solutions</li>
+        <br><br>
+        <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Custom</strong> widebody
+          conversions</li>
+        <br><br>
+        <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Precision</strong> exhaust
+          fabrication</li>
+        <br><br>
+        <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Suspension</strong> upgrades and
+          enhancements</li>
+        <br><br>
+        <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Sourcing</strong> and selling
+          authentic, stock JDM vehicles</li>
+      </ul>
+  </section>
+
+  <section class="mission-page">
+    <h2 style="padding-top:40px;" class="about-subtitle">Our Mission</h2>
+    <p style="padding-bottom:40px;" class="about-description">
+      Our mission is to empower automotive enthusiasts by transforming their <strong
+        style="color:white; font-weight:bolder;">visions</strong> into <strong
+        style="color:white; font-weight:bolder;">reality</strong>. Through performance tuning and
+      style-focused upgrades, we deliver customized JDM experiences while maintaining authenticity and reliability. From
+      sourcing rare imports
+      to fully custom builds, our goal is excellence in every detail.
+    </p>
+    <h2 class="about-subtitle">Our Team</h2>
+    <ul class="about-list">
+      <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Arminder Purewal</strong> – Founder &
+        Performance Specialist</li><br><br>
+      <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Asher Zaidi</strong> – Custom Design
+        & Fabrication Lead</li><br><br>
+    </ul>
+    <img src="team.jpg" alt="The Armin's Specifications Team" class="team-image" /><br><br>
+  </section>
+
+  <section class="core-values-page">
+    <h2 class="about-subtitle">Core Values</h2>
+    <ul style="padding-bottom:40px;" class="about-list">
+      <li class="about-list-item"><strong>Craftsmanship:</strong> Precision and detail in every modification</li>
+      <br><br>
+      <li class="about-list-item"><strong>Authenticity:</strong> Honoring the heritage of JDM culture</li><br><br>
+      <li class="about-list-item"><strong>Passion:</strong> Building cars that reflect each client’s dream</li><br><br>
+      <li class="about-list-item"><strong>Trust:</strong> Delivering consistent performance and reliability</li>
+    </ul>
+    </div>
+  </section>
+
+  <!--Footer-->
+
+  <!--Footer-->
+
+  <footer class="footer-page">
+    <div class="footer-container">
+      <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
+      <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.
+      </p>
+      <div class="extra-links">
+        <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
+        <a class="footer-link" href="termsofuse.html">Terms Of Use</a>
+        <a class="footer-link" href="faq.html">Frequently Asked Questions</a>
+      </div>
+      <div style="text-align:center;" class="extra-links-logo">
+        <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png"
+            alt="Logo Not Loaded"></a>
+        <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo"
+            src="instagramLogo.png" alt="Logo Not Loaded"></a>
+        <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo"
+            src="linkedinLogo.png" alt="Logo Not Loaded"></a>
+        <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo"
+            src="githubLogo.png" alt="Logo Not Loaded"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
