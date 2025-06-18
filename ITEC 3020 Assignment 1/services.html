@@ -1,95 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>Services</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet"  href="style.css">
     </head>
     <style>
 
-          .header {
-                background-color: #000000;
-                padding: 3rem 1rem;
-                text-align: center;
-              }
-
-          .header-title {
-            font-size: 2.75rem;
-            color: #ffffff;
-            text-transform: uppercase;
-            text-shadow: 
-            0 0 8px rgba(255, 255, 255, 0.7),
-            0 0 16px rgba(255, 255, 255, 0.5),
-            0 0 24px rgba(255, 255, 255, 0.3);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-          }
-
-          .header-subtitle {
-            font-size: 1.2rem;
-            color: #bbb;
-            margin-top: 0.5rem;
-            text-shadow: 
-            0 0 8px rgba(255, 255, 255, 0.7),
-            0 0 16px rgba(255, 255, 255, 0.5),
-            0 0 24px rgba(255, 255, 255, 0.3);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-          }
-
-          .services-background {
-            background-color: black;
-          }
-
-          .services-container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding:10px;
-          }
-
-          .service {
-            margin-bottom: 2.5rem;
-            padding-left: 1rem;
-            border-left: 5px solid #ffffff;
-          }
-
-          .service-title {
-            font-size: 1.6rem;
-            color: #ffffff;
-            margin-bottom: 0.5rem;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-          }
-
-          .service-description {
-            color: #f1f1f1;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-          }
-
-            .services-intro-heading-title {
-              color: white;
-              font-size: 3rem;
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
-              text-transform: uppercase;
-              letter-spacing: 4px;
-              font-weight: 900;
-              text-shadow: 
-              0 0 8px rgba(255, 255, 255, 0.7),
-              0 0 16px rgba(255, 255, 255, 0.5),
-              0 0 24px rgba(255, 255, 255, 0.3);
-            }
-
-            .services-intro-japanese-title {
-              color: white;
-              font-size: 2rem;
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
-              text-transform: uppercase;
-              letter-spacing: 4px;
-              font-weight: 900;
-              text-shadow: 
-              0 0 8px rgba(255, 255, 255, 0.7),
-              0 0 16px rgba(255, 255, 255, 0.5),
-              0 0 24px rgba(255, 255, 255, 0.3);
-            }
+          
 
             /* Performance Upgrades */
 
@@ -107,8 +26,8 @@
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
               padding:200px 80px;
-              border-top: 2px solid white;
-              border-bottom: 2px solid white;
+              border-top: 2px solid black;
+              border-bottom: 2px solid black;
           }
 
           .performance-container {
@@ -122,7 +41,10 @@
             color: #ffffff;
             padding-bottom: 0.5rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom:1rem;
           }
+
+          
 
           .icon-image {
             width:100px;
@@ -131,6 +53,7 @@
             drop-shadow(0 0 8px rgba(255, 255, 255, 0.7))
             drop-shadow(0 0 16px rgba(255, 255, 255, 0.5))
             drop-shadow(0 0 24px rgba(255, 255, 255, 0.3));
+            max-width: 100%;
           }
 
           /* Aesthetic Enhancements */
@@ -149,7 +72,7 @@
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
               padding:200px 80px;
-              border-bottom: 2px solid white;
+              border-bottom: 2px solid black;
           }
           
           .japanese-title-padding {
@@ -164,7 +87,7 @@
           .enhancements-title {
             font-size: 1.6rem;
             color: #ffffff;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             padding-top:1rem;
           }
@@ -185,7 +108,8 @@
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
               padding:200px 80px;
-              border-bottom: 2px solid white;
+              border-bottom: 2px solid black;
+              max-width: 100%;
           }
 
           .repair-container  {
@@ -196,7 +120,7 @@
           .repair-title {
             font-size: 1.6rem;
             color: #ffffff;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             padding-top:1rem;
           }
@@ -217,7 +141,8 @@
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
               padding:200px 80px;
-              border-bottom: 2px solid white;
+              border-bottom: 2px solid black;
+              max-width:100%;
           }
 
           .sale-container  {
@@ -228,7 +153,7 @@
           .sale-title {
             font-size: 1.6rem;
             color: #ffffff;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             padding-top:1rem;
           }
@@ -249,7 +174,7 @@
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-weight: bolder;
               padding:200px 80px;
-              border-bottom: 2px solid white;
+              max-width:100%;
           }
 
           .question-container  {
@@ -260,12 +185,12 @@
           .question-title {
             font-size: 1.6rem;
             color: #ffffff;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             padding-top:1rem;
           }
 
-          @media (max-width: 749px) {
+          @media (max-width: 968px) {
 
            .service-title {
             font-size:1rem;
@@ -321,6 +246,7 @@
           .icon-image {
             height:50px;
             width:50px;
+            max-width: 100%;
           }
 
           .title {
@@ -363,55 +289,6 @@
           <section>
               <video class="intro-video" style="display:block;" autoplay muted loop width="100%"><source src="ServicesVideo.mp4" type="video/mp4"></video>
           </section>
-
-          <main>
-            <!-- Header Section -->
-            <div class="header">
-             <div class="container">
-               <h1 class="header-title">JDM Services Overview</h1>
-               <p class="header-subtitle">Performance. Style. Precision. Customization.</p>
-             </div>
-           </div>
-         
-           <!-- Services Section -->
-            <section class="services-background">
-           <div class="services-container">
-             <div class="service">
-               <h2 class="service-title">1. JDM Tuning Services</h2>
-               <p class="service-description">
-                 Stage 1, 2, or 3 tuning plus burbles, pops, crackles, and flame kit installs. Get a bold sound and beast-mode performance tailored to your dream ride.
-               </p>
-             </div>
-         
-             <div class="service">
-               <h2 class="service-title">2. Wide‑Body Kit Installs</h2>
-               <p class="service-description">
-                 Enhance your stance and style with full wide-body conversions, including paint matching and precision fitment for that aggressive, race-ready look.
-               </p>
-             </div>
-         
-             <div class="service">
-               <h2 class="service-title">3. Performance Suspension Upgrades</h2>
-               <p class="service-description">
-                 From track setups to show-ready slams, we install coilovers, air rides, and custom geometry to dial in your perfect handling and ride height.
-               </p>
-             </div>
-         
-             <div class="service">
-               <h2 class="service-title">4. Stock JDM Car Sales</h2>
-               <p class="service-description">
-                 Start your build with a clean, authentic JDM platform. Browse our curated inventory of legendary imports ready for customization or daily driving.
-               </p>
-             </div>
-         
-             <div class="service">
-               <h2 class="service-title">5. Custom Exhaust Systems</h2>
-               <p class="service-description">
-                 We fabricate TIG-welded custom exhausts tuned for tone and flow—from deep street growls to track-day screamers. Built to perform and impress.
-               </p>
-             </div>
-           </div>
-          </main>
 
           <!--Performance Upgrades Page-->
 
@@ -503,24 +380,24 @@
 
 
     
-         <!--Footer-->
+       <!--Footer-->
 
-         <footer class="footer-page">
-              <div class="footer-container">
-                  <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
-                  <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
-              <div class="extra-links">
-                  <a class="footer-link" href="#">Privacy Policy</a>
-                  <a class="footer-link" href="#">Terms Of Use</a>
-                  <a class="footer-link" href="#">Frequently Asked Questions</a>
-              </div>
-              <div style="text-align:center;" class="extra-links-logo">
-                  <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
-              </div>
-              </div>          
-        </footer>
+       <footer class="footer-page">
+        <div class="footer-container">
+            <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
+            <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
+            <div class="extra-links">
+                <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
+                <a class="footer-link" href="termsofuse.html">Terms Of Use</a>
+                <a class="footer-link" href="faq.html">Frequently Asked Questions</a>
+            </div>
+            <div style="text-align:center;" class="extra-links-logo">
+              <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
+              <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
+              <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
+              <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
+            </div>
+        </div>          
+      </footer>
     </body>
 </html>
