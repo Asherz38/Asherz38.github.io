@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>News</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet"  href="style.css">
+        <style>
+          .news-page {
+            margin: 0 auto;
+            color:white;
+            max-width: 100%;
+          }
+
+          .news-heading {
+            text-align: center;
+            font-size:2rem;
+            padding-bottom:40px;
+          }
+
+          .news-grid {
+            display:grid;
+            grid-template-columns: auto auto;
+            gap:20px;
+          }
+
+          .news-post {
+            padding:20px;
+            background-color:black;
+            box-shadow: 0 0 20px black;
+          }
+
+          .news-post img {
+            width:100%;
+            height:auto;
+          }
+
+          .news-post h3 {
+            font-size:1.5rem;
+          }
+
+          .news-post .date {
+            font-size:0.9rem;
+            color:gray;
+          }
+
+          .news-post p {
+            font-size:0.8rem;
+          }
+        </style>
     </head>
     <body>
 
@@ -23,25 +66,63 @@
               </div>
             </nav>
           </header>
-    
-          <!--Footer-->
 
-          <footer class="footer-page">
-            <div class="footer-container">
-                <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
-                <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
-                <div class="extra-links">
-                    <a class="footer-link" href="#">Privacy Policy</a>
-                    <a class="footer-link" href="#">Terms Of Use</a>
-                    <a class="footer-link" href="#">Frequently Asked Questions</a>
-                </div>
-                <div style="text-align:center;" class="extra-links-logo">
-                  <a href="#"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="#"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="#"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
-                  <a href="#"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
-                </div>
-            </div>          
-          </footer>
+          <!--Section Page-->
+
+          <section class="news-page">
+            <h1 class="news-heading">Recent News</h1>
+            <div class="news-grid">
+
+              <div class="news-post">
+                <img src="#" alt="Insert Image Here">
+                <h3>Post Title Here</h3>
+                <p class="date">MM DD, YYYY</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga, consequatur error earum ipsa consequuntur itaque labore distinctio, repellendus eveniet neque placeat atque nobis rem vero veniam laborum temporibus magnam.</p>
+              </div>
+
+              <div class="news-post">
+                <img src="#" alt="Insert Image Here">
+                <h3>Post Title Here</h3>
+                <p class="date">MM DD, YYYY</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga, consequatur error earum ipsa consequuntur itaque labore distinctio, repellendus eveniet neque placeat atque nobis rem vero veniam laborum temporibus magnam.</p>
+              </div>
+
+              <div class="news-post">
+                <img src="#" alt="Insert Image Here">
+                <h3>Post Title Here</h3>
+                <p class="date">MM DD, YYYY</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga, consequatur error earum ipsa consequuntur itaque labore distinctio, repellendus eveniet neque placeat atque nobis rem vero veniam laborum temporibus magnam.</p>
+              </div>
+
+              <div class="news-post">
+                <img src="#" alt="Insert Image Here">
+                <h3>Post Title Here</h3>
+                <p class="date">MM DD, YYYY</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga, consequatur error earum ipsa consequuntur itaque labore distinctio, repellendus eveniet neque placeat atque nobis rem vero veniam laborum temporibus magnam.</p>
+              </div>
+
+            </div>
+          </section>
+    
+         <!--Footer-->
+
+         <footer class="footer-page">
+          <div class="footer-container">
+              <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
+              <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
+              <div class="extra-links">
+                  <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
+                  <a class="footer-link" href="termsofuse.html">Terms Of Use</a>
+                  <a class="footer-link" href="faq.html">Frequently Asked Questions</a>
+              </div>
+              <div style="text-align:center;" class="extra-links-logo">
+                <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
+                <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo" src="instagramLogo.png" alt="Logo Not Loaded"></a>
+                <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo" src="linkedinLogo.png" alt="Logo Not Loaded"></a>
+                <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo" src="githubLogo.png" alt="Logo Not Loaded"></a>
+              </div>
+          </div>          
+        </footer>
     </body>
 </html>
+
