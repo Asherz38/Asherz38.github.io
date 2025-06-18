@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>About</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet"  href="style.css">
         <style>
+
+          * {
+              margin:0;
+              padding:0;
+              box-sizing:border-box;
+          }
+
           body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #f4f4f4;
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('jdm-background.jpg') no-repeat center center fixed;
-            animation: 0.3s;
+            transition: 0.3s;
           }
       
-          .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(20, 20, 20, 0.9);
+          .about-container {
+            background-color: rgb(21, 19, 19);
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(255, 90, 30, 0.2);
             width:100%;
             text-align: center;
-            padding:0px 40px;
+          }
+
+          .about-page, .mission-page {
+            background-color: black;
+          }
+
+          .core-values-page {
+            background-color: black;
           }
       
           .about-title, .about-subtitle {
@@ -35,19 +45,22 @@
             font-size: 3rem;
             text-align: center;
             padding: 0px 30px;
+            margin: 0 auto;
+            max-width:800px;
           }
       
           .about-subtitle {
             font-size: 2rem;
-            padding: 20px 0px;
+            padding: 20px 30px;
           }
       
           .about-description {
             font-size: 1rem;
             line-height: 1.7;
             color: #ddd;
+            max-width:550px;
             text-align: center;
-            padding: 0px 30px;
+            margin: 0 auto;
           }
 
           .about-list {
@@ -57,13 +70,13 @@
       
           .team-image {
             display: block;
-            width: 90%;
-            max-width: 800px;
-            margin: 30px auto;
+            width: 100%;
             border-radius: 10px;
             transition: 0.5s;
             border:1px solid white;
             overflow:hidden;
+            margin: 0 auto;
+            max-width:550px;
           }
       
           .team-image:hover {
@@ -118,14 +131,16 @@
 
       <!--About Page-->
 
+      <section class="about-page">
       <div class="about-container">
         <h1 style="padding-top:40px;" class="about-title">About Armin’s Specifications</h1>
+        <h2 style="text-align:center; font-size:2rem;">アルミンのスペックについて</h2>
         <h2 style="padding-top:40px;" class="about-subtitle">Company Overview</h2>
         <p class="about-description">
           Armin’s Specifications is a premier automotive modification company fueled by a passion for JDM performance and culture.
           We provide expert craftsmanship in:
         </p><br>
-        <ul class="about-list">
+        <ul style="padding-bottom:40px;"  class="about-list">
           <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Advanced</strong> engine tuning solutions</li>
           <br><br>
           <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Custom</strong> widebody conversions</li>
@@ -136,29 +151,35 @@
           <br><br>
           <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Sourcing</strong> and selling authentic, stock JDM vehicles</li>
         </ul>
-    
+      </section>
+
+      <section class="mission-page">
         <h2 style="padding-top:40px;" class="about-subtitle">Our Mission</h2>
-        <p class="about-description">
+        <p style="padding-bottom:40px;" class="about-description">
           Our mission is to empower automotive enthusiasts by transforming their <strong style="color:white; font-weight:bolder;">visions</strong> into <strong style="color:white; font-weight:bolder;">reality</strong>. Through performance tuning and
           style-focused upgrades, we deliver customized JDM experiences while maintaining authenticity and reliability. From sourcing rare imports
           to fully custom builds, our goal is excellence in every detail.
         </p>
-    
-        <h2 style="padding-top:40px;" class="about-subtitle">Our Team</h2>
+        <h2 class="about-subtitle">Our Team</h2>
         <ul class="about-list">
           <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Arminder Purewal</strong> – Founder & Performance Specialist</li><br><br>
-          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Asher Zaidi</strong> – Custom Design & Fabrication Lead</li>
+          <li class="about-list-item"><strong style="color:white; font-weight:bolder;">Asher Zaidi</strong> – Custom Design & Fabrication Lead</li><br><br>
         </ul>
-        <img src="team.jpg" alt="The Armin's Specifications Team" class="team-image" />
-    
+        <img src="team.jpg" alt="The Armin's Specifications Team" class="team-image"/><br><br>
+      </section>
+
+      <section class="core-values-page">
         <h2 class="about-subtitle">Core Values</h2>
-        <ul style="padding-bottom:60px;" class="about-list">
+        <ul style="padding-bottom:40px;" class="about-list">
           <li class="about-list-item"><strong>Craftsmanship:</strong> Precision and detail in every modification</li><br><br>
           <li class="about-list-item"><strong>Authenticity:</strong> Honoring the heritage of JDM culture</li><br><br>
           <li class="about-list-item"><strong>Passion:</strong> Building cars that reflect each client’s dream</li><br><br>
           <li class="about-list-item"><strong>Trust:</strong> Delivering consistent performance and reliability</li>
         </ul>
       </div>
+    </section>
+
+     <!--Footer-->
 
      <!--Footer-->
 
@@ -167,9 +188,9 @@
           <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
           <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.</p> 
           <div class="extra-links">
-              <a class="footer-link" href="#">Privacy Policy</a>
-              <a class="footer-link" href="#">Terms Of Use</a>
-              <a class="footer-link" href="#">Frequently Asked Questions</a>
+              <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
+              <a class="footer-link" href="termsofuse.html">Terms Of Use</a>
+              <a class="footer-link" href="faq.html">Frequently Asked Questions</a>
           </div>
           <div style="text-align:center;" class="extra-links-logo">
             <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png" alt="Logo Not Loaded"></a>
