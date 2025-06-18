@@ -12,6 +12,14 @@ html {
 
 /* navbar */
 
+.active.active {
+  color:rgb(0, 255, 255);
+  text-shadow:
+    0 0 8px rgba(0, 255, 255,0.7)
+    0 0 16px rgba(0, 255, 255, 0.5)
+    0 0 24px rgba(0, 255, 255, 0.3);
+}
+
 .logo {
   height: 128px;
   width: auto;
