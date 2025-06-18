@@ -20,6 +20,16 @@ html {
     0 0 24px rgba(0, 255, 255, 0.3);
 }
 
+.active-logo.active {
+  color:rgb(0, 255, 255);
+  filter:
+    drop-shadow(0 0 8px rgba(0, 255, 255, 0.7)) drop-shadow(0 0 16px rgba(0, 255, 255, 0.5)) drop-shadow(0 0 24px rgba(0, 255, 255, 0.3));
+}
+
+.active-logo.active {
+  color:rgb(0, 255, 255);
+}
+
 .logo {
   height: 128px;
   width: auto;
