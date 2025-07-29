@@ -121,6 +121,7 @@ body.light-mode {
     0 0 8px rgba(0, 255, 255,0.7)
     0 0 16px rgba(0, 255, 255, 0.5)
     0 0 24px rgba(0, 255, 255, 0.3);
+    transition:0.3s;
 }
 
 .active-logo.active {
@@ -148,7 +149,6 @@ body.light-mode {
 .nav-bar {
   text-align: center;
   list-style-type: none;
-  background-color: black;
   padding: 16px 32px;
 }
 
@@ -160,7 +160,6 @@ li {
   position: relative;
   display: inline-block;
   margin: 0 16px;
-  color: white;
   text-transform: uppercase;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -171,6 +170,7 @@ li {
     0 0 8px rgba(255, 255, 255, 0.7),
     0 0 16px rgba(255, 255, 255, 0.5),
     0 0 24px rgba(255, 255, 255, 0.3);
+    color:white;
 }
 
 .webpage-link::after {
@@ -210,13 +210,12 @@ li {
 
 .footer-page {
   width: 100%;
-  background-color: rgb(23, 22, 22);
   padding: 20px;
+  background-color: rgb(22,22,22);
 }
 
 .copyright-text {
   text-align: center;
-  color: white;
 }
 
 .extra-links {
@@ -226,10 +225,10 @@ li {
 }
 
 .footer-link {
+  color:white;
   position: relative;
   display: inline-block;
   margin: 0 16px;
-  color: white;
   text-transform: uppercase;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -280,7 +279,6 @@ li {
   width: 25px;
   display: inline-block;
   margin: 5px 15px;
-  color: white;
   text-transform: uppercase;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -330,7 +328,6 @@ li {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: black;
   gap: 32px;
 }
 
@@ -346,6 +343,35 @@ li {
   justify-content: center;
   gap: 48px;
 }
+
+.dark-mode-btn {
+  height:10px;
+  width:25px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid white;
+  padding-bottom:25px;
+  border:none;
+}
+
+.dark-mode-img {
+  height:25px;
+  width:25px;
+  filter:
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.7)) 
+    drop-shadow(0 0 16px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 24px rgba(255, 255, 255, 0.3));
+}
+
+.dark-mode-btn:hover .dark-mode-img {
+    transform: scale(1.05);
+    border: none;
+    content: url("darkModeHover.png");
+  }
 
 @media (max-width: 1149px) {
   .nav-bar {
