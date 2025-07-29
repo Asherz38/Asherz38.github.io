@@ -4,11 +4,113 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
-html {
+body {
   background-color: black;
-  scroll-behavior:smooth;
+  color: white;
+  transition:0.3s;
+}
+
+body .footer-page {
+  transition:0.3s;
+}
+
+/* background changer */
+
+body.light-mode {
+  color: black;
+  background-color: white;
+  text-shadow:
+    0 0 8px rgba(0, 0, 0, 0.7),
+    0 0 16px rgba(0, 0, 0, 0.5),
+    0 0 24px rgba(0, 0, 0, 0.3);
+    transition:0.3s;
+}
+
+.light-mode .active-logo.active {
+    filter:
+    drop-shadow(0 0 8px rgba(0, 255, 255, 0.7)) drop-shadow(0 0 16px rgba(0, 255, 255, 0.5)) drop-shadow(0 0 24px rgba(0, 255, 255, 0.3));
+}
+
+.light-mode .active.active {
+  filter:
+    drop-shadow(0 0 8px rgba(0, 255, 255, 0.7)) drop-shadow(0 0 16px rgba(0, 255, 255, 0.5)) drop-shadow(0 0 24px rgba(0, 255, 255, 0.3));
+}
+
+.light-mode .dark-mode-img {
+  content:url("lightMode.png");
+  filter:
+    drop-shadow(0 0 8px rgba(0, 0, 0, 0.7)) 
+    drop-shadow(0 0 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 24px rgba(0, 0, 0, 0.3));
+}
+
+.light-mode .webpage-link, .light-mode .footer-link {
+  color:black;
+  text-shadow:
+    0 0 8px rgba(0, 0, 0, 0.7),
+    0 0 16px rgba(0, 0, 0, 0.5),
+    0 0 24px rgba(0, 0, 0, 0.3);
+    transition:0.3s;
+}
+
+.light-mode .webpage-link:hover, .light-mode .footer-link:hover {
+  color: rgb(0,128,255);
+  text-shadow:
+    0 0 8px rgba(0, 128, 255, 0.7),
+    0 0 16px rgba(0, 128, 255, 0.5),
+    0 0 24px rgba(0, 128, 255, 0.3);
+}
+
+.light-mode .footer-page {
+  background-color:rgb(232, 232, 232);
+  transition:0.3s;
+}
+
+.light-mode .logo {
+  content:url("BrandLogoBlack.png");
+  filter:
+    drop-shadow(0 0 8px rgba(0, 0, 0, 0.7)) 
+    drop-shadow(0 0 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 24px rgba(0, 0, 0, 0.3));
+    transition:0.3s;
+}
+
+.light-mode .footer-logo {
+  filter:
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.7)) drop-shadow(0 0 16px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 24px rgba(255, 255, 255, 0.3));
+    transition:0.3s;
+}
+
+.light-mode .twitter-logo {
+  content:url("TwitterLogoBlack.png");
+  filter:
+    drop-shadow(0 0 8px rgba(0, 0, 0, 0.7)) 
+    drop-shadow(0 0 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 24px rgba(0, 0, 0, 0.3));
+    transition:0.3s;
+}
+
+.light-mode .instagram-logo {
+  content:url("InstagramLogoBlack.png");
+  filter:
+    drop-shadow(0 0 8px rgba(0, 0, 0, 0.7)) 
+    drop-shadow(0 0 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 24px rgba(0, 0, 0, 0.3));
+    transition:0.3s;
+}
+
+.light-mode .linkedin-logo {
+  content:url("LinkedinLogoBlack.png");
+  filter:
+    drop-shadow(0 0 8px rgba(0, 0, 0, 0.7)) 
+    drop-shadow(0 0 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 24px rgba(0, 0, 0, 0.3));
+}
+
+.light-mode .github-logo {
+  content:url("GithubLogoBlack.png");
+  filter:
+    drop-shadow(0 0 8px rgba(0, 0, 0, 0.7)) 
+    drop-shadow(0 0 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 24px rgba(0, 0, 0, 0.3));
+    transition:0.3s;
 }
 
 /* navbar */
