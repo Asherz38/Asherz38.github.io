@@ -8,6 +8,79 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <style>
+
+body {
+    color:white;
+  }
+  body.light-mode {
+    color:black;
+  }
+
+  .light-mode .performance-upgrades-page {
+    background: linear-gradient(rgba(232, 232, 232, 0.5), rgba(232, 232, 232, 0.5)), url('performance-upgrade-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .light-mode .aesthetic-enhancements-page {
+    background: linear-gradient(rgba(232, 232, 232, 0.5), rgba(232, 232, 232, 0.5)), url('aesthetic-enhancements-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .light-mode .general-maintenance-and-repair-page {
+    background: linear-gradient(rgba(232, 232, 232, 0.5), rgba(232, 232, 232, 0.5)), url('repair-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .light-mode .JDM-stock-car-sales-page {
+    background: linear-gradient(rgba(232, 232, 232, 0.5), rgba(232, 232, 232, 0.5)), url('sale-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .light-mode .vehicle-QA-assistance-page {
+    background: linear-gradient(rgba(232, 232, 232, 0.5), rgba(232, 232, 232, 0.5)), url('question-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .light-mode .engine-icon {
+    content:url('engineIcon_black.png');
+  }
+
+  .light-mode .suspension-icon {
+    content:url('suspensionIcon_black.png');
+  }
+
+  .light-mode .exhaust-icon {
+    content:url('exhaustIcon_black.png');
+  }
+
+  .light-mode .fender-icon {
+    content:url('fenderIcon_black.png');
+  }
+
+  .light-mode .repair-icon {
+    content:url('repairIcon_black.png');
+  }
+
+  .light-mode .question-icon {
+    content:url('questionIcon_black.png');
+  }
+
+  .light-mode .icon-image {
+    filter:
+    drop-shadow(0 0 8px rgba(0, 0, 0, 0.7)) 
+    drop-shadow(0 0 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 24px rgba(0, 0, 0, 0.3));
+  }
+
   /* Performance Upgrades */
 
   .performance-upgrades-page {
@@ -264,19 +337,7 @@
 <body>
 
   <!--Navbar-->
-  <header>
-    <nav class="nav-bar">
-      <a href="index.html"><img class="logo" src="BrandLogo.png" alt="Logo Not Loaded"></a>
-      <div class="nav-links">
-        <a class="webpage-link" href="home.html">HOME</a>
-        <a class="webpage-link" href="about.html">ABOUT US</a>
-        <a class="webpage-link" href="products.html">PRODUCTS</a>
-        <a class="active webpage-link" href="services.html">SERVICES</a>
-        <a class="webpage-link" href="news.html">NEWS</a>
-        <a class="webpage-link" href="contact.html">CONTACT US</a>
-      </div>
-    </nav>
-  </header>
+  <header id="header"></header>
 
   <!--Section Video-->
 
@@ -293,18 +354,18 @@
       <h1 class="services-intro-heading-title">Performance Upgrades</h1>
       <h2 class="services-intro-japanese-title japanese-title-padding">パフォーマンスアップグレード</h2>
       <div class="performance-container">
-        <img class="icon-image" src="engineIcon.png" alt="Logo Not Loaded">
+        <img class="engine-icon icon-image" src="engineIcon.png" alt="Logo Not Loaded">
         <h1 class="performance-title">JDM Tuning Services</h1>
         <p class="performance-description">Tailored to your dream: Stage 1, Stage 2, and Stage 3 tuning, plus fiery
           burbles, pops & crackles—and full flame kit installation. We’ll craft a
           powerful and aggressive sound profile that elevates performance and
           turns heads.</p>
-        <img class="icon-image" src="exhaustIcon.png" alt="Logo Not Loaded">
+        <img class="exhaust-icon icon-image" src="exhaustIcon.png" alt="Logo Not Loaded">
         <h1 class="performance-title">Performance Suspension Upgrades</h1>
         <p class="performance-description">From adjustable coilovers to air suspension systems, we tune
           handling, stance, and comfort. Whether it’s daily drivability, track
           precision, or slammed style, we’ve got you fully dialed in.</p>
-        <img class="icon-image" src="suspensionIcon.png" alt="Logo Not Loaded">
+        <img class="suspension-icon icon-image" src="suspensionIcon.png" alt="Logo Not Loaded">
         <h1 class="performance-title">Custom Exhaust Systems</h1>
         <p class="performance-description">We build and install custom exhausts tuned for JDM powerhouses.
           From deep growls to race-inspired tone curves, every system is
@@ -321,7 +382,7 @@
       <h1 class="services-intro-heading-title">Aesthetic Enhancements</h1>
       <h2 class="services-intro-japanese-title japanese-title-padding">外観カスタム</h2>
       <div class="enhancements-container">
-        <img class="icon-image" src="fenderIcon.png" alt="Logo Not Loaded">
+        <img class="fender-icon icon-image" src="fenderIcon.png" alt="Logo Not Loaded">
         <h1 class="service-title title">Wide-Body Kit Installs</h1>
         <p class="service-description description">Transform your ride with sleek, performance-enhancing wide-body
           kits. We handle full fitment, paint-matching, and
@@ -338,7 +399,7 @@
       <h1 class="services-intro-heading-title">General Maintenance & Repair</h1>
       <h2 class="services-intro-japanese-title japanese-title-padding">一般メンテナンス & 修理</h2>
       <div class="repair-container">
-        <img class="icon-image" src="repairIcon.png" alt="Logo Not Loaded">
+        <img class="repair-icon icon-image" src="repairIcon.png" alt="Logo Not Loaded">
         <h1 class="repair-title title">Repair Services</h1>
         <p class="repair-description description">Whether it’s engine trouble, drivetrain issues, or electrical
           diagnostics, our expert technicians treat every vehicle with the same meticulous care we bring to our custom
@@ -357,7 +418,7 @@
       <h1 class="services-intro-heading-title">JDM Stock Car Sales</h1>
       <h2 class="services-intro-japanese-title japanese-title-padding">輸入車</h2>
       <div class="sale-container">
-        <img class="icon-image" src="fenderIcon.png" alt="Logo Not Loaded">
+        <img class="fender-icon icon-image" src="fenderIcon.png" alt="Logo Not Loaded">
         <h1 class="sale-title title">Selling Stock JDM Vehicles</h1>
         <p class="sale-description description">We take pride in offering a curated selection of authentic, stock JDM
           vehicles — untouched icons that embody the raw spirit of Japanese engineering. From low-mileage imports to
@@ -376,7 +437,7 @@
       <h1 class="services-intro-heading-title">Vehicle Q&A Assistance</h1>
       <h2 class="services-intro-japanese-title japanese-title-padding">車両に関するQ&Aサポート</h2>
       <div class="question-container">
-        <img class="icon-image" src="questionIcon.png" alt="Logo Not Loaded">
+        <img class="question-icon icon-image" src="questionIcon.png" alt="Logo Not Loaded">
         <h1 class="question-title title">Q&A For Vehicles</h1>
         <p class="question-description description">Have questions about a specific vehicle, import process, or
           customization options? Our team is here to help. Whether you're curious about service history, engine specs,
@@ -392,28 +453,9 @@
 
   <!--Footer-->
 
-  <footer class="footer-page">
-    <div class="footer-container">
-      <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
-      <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.
-      </p>
-      <div class="extra-links">
-        <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
-        <a class="footer-link" href="termsofuse.html">Terms Of Use</a>
-        <a class="footer-link" href="faq.html">Frequently Asked Questions</a>
-      </div>
-      <div style="text-align:center;" class="extra-links-logo">
-        <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png"
-            alt="Logo Not Loaded"></a>
-        <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo"
-            src="instagramLogo.png" alt="Logo Not Loaded"></a>
-        <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo"
-            src="linkedinLogo.png" alt="Logo Not Loaded"></a>
-        <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo"
-            src="githubLogo.png" alt="Logo Not Loaded"></a>
-      </div>
-    </div>
-  </footer>
+  <footer id="footer"></footer>
+  <script src="scripts.js"></script>
+  
 </body>
 
 </html>
