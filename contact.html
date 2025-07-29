@@ -12,6 +12,57 @@
     box-sizing: border-box;
   }
 
+  body {
+    color:white;
+  }
+
+  .light-mode .contact-container {
+    background-color:rgb(232,232,232);
+  }
+
+  .light-mode .contact-us-icon {
+    content:url('contactUsIcon_black.png');
+    filter:
+      drop-shadow(0 0 8px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 16px rgba(0, 0, 0, 0.5)) drop-shadow(0 0 24px rgba(0, 0, 0, 0.3));
+  }
+
+  .light-mode .contact-title {
+    text-shadow:
+      0 0 8px rgba(0, 0, 0, 0.7),
+      0 0 16px rgba(0, 0, 0, 0.5),
+      0 0 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .light-mode .contact-form input {
+    background-color: black;
+    color:white;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .light-mode .contact-form textarea {
+    background-color:black;
+    color:white;
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  .light-mode .contact-form input::placeholder {
+    color:white;
+  }
+
+  .light-mode .contact-form textarea::placeholder {
+    color:white;
+  }
+
+  .light-mode .contact-form input[type="submit"] {
+    background-color: white;
+    color:black;
+  }
+
+  .light-mode .social-media-page {
+    background-color: white;
+    color:black;
+  }
+
   /* Contact Page */
   .contact-container {
     display: flex;
@@ -21,7 +72,6 @@
     flex-wrap: wrap;
     align-items: stretch;
     background-color: rgb(32, 32, 32);
-    color: white;
   }
 
   .contact-information {
@@ -119,8 +169,6 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 10px;
-    width: 100%;
   }
 
   .social-media-heading {
@@ -182,19 +230,7 @@
 <body>
 
   <!--Navbar-->
-  <header>
-    <nav class="nav-bar">
-      <a href="index.html"><img class="logo" src="BrandLogo.png" alt="Logo Not Loaded"></a>
-      <div class="nav-links">
-        <a class="webpage-link" href="home.html">HOME</a>
-        <a class="webpage-link" href="about.html">ABOUT US</a>
-        <a class="webpage-link" href="products.html">PRODUCTS</a>
-        <a class="webpage-link" href="services.html">SERVICES</a>
-        <a class="webpage-link" href="news.html">NEWS</a>
-        <a class="active webpage-link" href="contact.html">CONTACT US</a>
-      </div>
-    </nav>
-  </header>
+    <header id="header"></header>
 
   <!--Section Video-->
 
@@ -263,33 +299,10 @@
       class="social-media-description">Connect With Us Here!</h2>
   </section>
 
-
   <!--Footer-->
 
-  <!--Footer-->
-
-  <footer class="footer-page">
-    <div class="footer-container">
-      <p class="copyright-text">&copy; 2025 Armin's Specifications. All rights reserved.</p>
-      <p class="copyright-text">Unauthorized use or reproduction of content, images, or branding is strictly prohibited.
-      </p>
-      <div class="extra-links">
-        <a class="footer-link" href="privacypolicy.html">Privacy Policy</a>
-        <a class="footer-link" href="termsofuse.html">Terms Of Use</a>
-        <a class="footer-link" href="faq.html">Frequently Asked Questions</a>
-      </div>
-      <div style="text-align:center;" class="extra-links-logo">
-        <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo" src="twitterLogo.png"
-            alt="Logo Not Loaded"></a>
-        <a href="https://www.instagram.com/arminspecifications/"><img class="footer-logo instagram-logo"
-            src="instagramLogo.png" alt="Logo Not Loaded"></a>
-        <a href="https://www.linkedin.com/in/armin-s-specifications-32b88136b/"><img class="footer-logo linkedin-logo"
-            src="linkedinLogo.png" alt="Logo Not Loaded"></a>
-        <a href="https://github.com/Asherz38/Asherz38.github.io"><img class="footer-logo github-logo"
-            src="githubLogo.png" alt="Logo Not Loaded"></a>
-      </div>
-    </div>
-  </footer>
+  <footer id="footer"></footer>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
