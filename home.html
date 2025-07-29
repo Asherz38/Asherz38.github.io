@@ -15,7 +15,7 @@
       box-sizing: border-box;
     }
 
-     .light-mode .welcome-message-page {
+    .light-mode .welcome-message-page {
       background-color: rgb(232, 232, 232);
     }
 
@@ -70,9 +70,7 @@
         0 0 16px rgba(0, 0, 0, 0.5),
         0 0 24px rgba(0, 0, 0, 0.3);
     }
-
     /* welcome message page */
-
 
     .welcome-message-page {
       height: auto;
@@ -92,7 +90,6 @@
     }
 
     .introduction-heading {
-      color: white;
       font-size: 2.8vw;
       text-transform: uppercase;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -105,7 +102,6 @@
     }
 
     .japanese-introduction-heading {
-      color: white;
       font-size: 1vw;
       text-align: center;
       text-transform: uppercase;
@@ -121,7 +117,6 @@
     }
 
     .introduction-paragraph {
-      color: white;
       font-size: 1rem;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       line-height: 1.7rem;
@@ -139,7 +134,6 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: bolder;
       padding: 0px 40px;
@@ -154,7 +148,6 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       margin-bottom: 12px;
-      color: #ffffff;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: bold;
     }
@@ -181,7 +174,6 @@
 
     .click-to-action-btn {
       background-color: rgb(0, 0, 0);
-      color: white;
       padding: 16px 36px;
       font-size: 1.1rem;
       font-weight: bold;
@@ -194,9 +186,12 @@
       border: 1px solid white;
     }
 
+    .click-to-action-style {
+      color:white;
+    }
+
     .click-to-action-btn:hover {
       background-color: rgb(0, 128, 255);
-      color: white;
       transform: scale(1.05);
       border: 1px solid rgb(0, 128, 255);
     }
@@ -207,7 +202,6 @@
       background-color: rgb(10, 9, 9);
       padding: 80px 32px;
       text-align: center;
-      color: white;
       height: auto;
     }
 
@@ -219,7 +213,6 @@
     .company-overview-heading {
       font-size: 42px;
       text-transform: uppercase;
-      color: white;
       padding-bottom: 20px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-weight: 900;
@@ -231,7 +224,6 @@
 
     .japanese-company-overview-heading {
       font-size: 24px;
-      color: white;
       margin-bottom: 20px;
       font-weight: 500;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -245,7 +237,6 @@
     .company-overview-paragraph {
       font-size: 18px;
       line-height: 1.7rem;
-      color: #ffffff;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
@@ -281,13 +272,21 @@
 
   <!--Header Nav-Bar-->
 
-<header id="header"></header>
+  <header id="header"></header>
+
+ <!--<script>
+function lightMode() {
+   var element = document.body;
+   element.classList.toggle("light-mode");
+}
+</script>--> 
 
   <!--Section Video-->
 
   <section>
     <video class="intro-video" style="display:block;" autoplay muted loop width="100%">
       <source src="LogoVideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
   </section>
 
@@ -321,7 +320,7 @@
       <p class="tagline">TAGLINE</p>
       <h1 class="welcome-background-text">TUNED FOR LEGACY</h1>
       <h2 class="welcome-background-text-japanese">伝統のためのチューニング</h2>
-      <button class="click-to-action-btn btn"><a style="text-decoration:none; color:white; text-transform:uppercase;"
+      <button class="click-to-action-btn btn"><a class="click-to-action-style" style="text-decoration:none; text-transform:uppercase;"
           href="products.html">Explore Our Car Sales</a></button>
     </div>
   </section>
@@ -358,7 +357,6 @@
 
   <footer id="footer"></footer>
 <script src="scripts.js"></script>
-
 </body>
 
 </html>
