@@ -7,9 +7,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <style>
+
+    body {
+      color:white; 
+    }
+    body.light-mode {
+      color:black;
+      background-color:white;
+    }
+
+    .light-mode .news-post {
+      background-color:rgb(232,232,232);
+      box-shadow: 0 0 20px rgb(232, 232, 232);
+    }
+    
     .news-page {
       margin: 0 auto;
-      color: white;
       max-width: 100%;
     }
 
@@ -20,15 +33,19 @@
     }
 
     .news-grid {
-      display: grid;
-      grid-template-columns: auto auto;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      text-align: center;
       gap: 20px;
+      padding:20px;
     }
 
     .news-post {
       padding: 20px;
-      background-color: black;
+      background-color: rgb(32, 32, 32);
       box-shadow: 0 0 20px black;
+      width:90%;
     }
 
     .news-post img {
@@ -57,54 +74,25 @@
 
   <header id="header"></header>
 
+<!--<script>
+function lightMode() {
+   var element = document.body;
+   element.classList.toggle("light-mode");
+}
+</script>-->
+
   <!--Section Page-->
 
   <section class="news-page">
-    <h1 class="news-heading">Recent News</h1>
-    <div class="news-grid">
 
-      <div class="news-post">
-        <img src="#" alt="Insert Image Here">
-        <h3>Post Title Here</h3>
-        <p class="date">MM DD, YYYY</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga, consequatur error earum ipsa
-          consequuntur itaque labore distinctio, repellendus eveniet neque placeat atque nobis rem vero veniam laborum
-          temporibus magnam.</p>
-      </div>
-
-      <div class="news-post">
-        <img src="#" alt="Insert Image Here">
-        <h3>Post Title Here</h3>
-        <p class="date">MM DD, YYYY</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga, consequatur error earum ipsa
-          consequuntur itaque labore distinctio, repellendus eveniet neque placeat atque nobis rem vero veniam laborum
-          temporibus magnam.</p>
-      </div>
-
-      <div class="news-post">
-        <img src="#" alt="Insert Image Here">
-        <h3>Post Title Here</h3>
-        <p class="date">MM DD, YYYY</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga, consequatur error earum ipsa
-          consequuntur itaque labore distinctio, repellendus eveniet neque placeat atque nobis rem vero veniam laborum
-          temporibus magnam.</p>
-      </div>
-
-      <div class="news-post">
-        <img src="#" alt="Insert Image Here">
-        <h3>Post Title Here</h3>
-        <p class="date">MM DD, YYYY</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga, consequatur error earum ipsa
-          consequuntur itaque labore distinctio, repellendus eveniet neque placeat atque nobis rem vero veniam laborum
-          temporibus magnam.</p>
-      </div>
-
-    </div>
+    <h1 style="padding-top:80px;" class="news-heading">Recent News</h1>
+    
+    <div id="news-grid" class="news-grid"><!--dynamic entering through scripts.js--></div>
   </section>
 
   <!--Footer-->
 
-  <footer id="footer"></footer>
+ <footer id="footer"></footer>
   <script src="scripts.js"></script>
 </body>
 
