@@ -209,8 +209,9 @@
 
     .social-media-page {
       height: auto;
+      max-width: 100%;
     }
-    
+
     .social-media-heading {
       font-size: 5vw;
     }
@@ -230,7 +231,14 @@
 <body>
 
   <!--Navbar-->
-    <header id="header"></header>
+  <header id="header"></header>
+
+<!--<script>
+function lightMode() {
+   var element = document.body;
+   element.classList.toggle("light-mode");
+}
+</script>-->
 
   <!--Section Video-->
 
@@ -283,7 +291,7 @@
   <!--Social Media Section-->
 
   <section class="social-media-page">
-    <h1 class="social-media-heading" style="color:white; text-align:center; padding:20px 0px;">Social Media</h1>
+    <h1 class="social-media-heading" style="text-align:center; padding:20px 0px;">Social Media</h1>
     <div style="text-align:center;" class="extra-links-logo social-media-container">
       <a href="https://x.com/ArminsSpecs"><img class="footer-logo twitter-logo logo" src="twitterLogo.png"
           alt="Logo Not Loaded"></a>
@@ -295,13 +303,14 @@
           src="githubLogo.png" alt="Logo Not Loaded"></a>
     </div>
     <h2
-      style="color:white; text-align:center; padding-top:20px; text-transform:uppercase; font-weight:bolder; font-family:Verdana, Geneva, Tahoma, sans-serif;"
+      style="text-align:center; padding-top:20px; text-transform:uppercase; font-weight:bolder; font-family:Verdana, Geneva, Tahoma, sans-serif;"
       class="social-media-description">Connect With Us Here!</h2>
   </section>
 
   <!--Footer-->
 
-  <footer id="footer"></footer>
+ <footer id="footer"></footer>
+ 
   <script src="scripts.js"></script>
 </body>
 
