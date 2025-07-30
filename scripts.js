@@ -31,7 +31,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (toggleBtn) {
                     toggleBtn.addEventListener("click", toggleTheme);
                 } // if the toggle button exists (the moon looking dark/light button, add a click event listener to it so it functions).
-        });
+
+                 const links = document.querySelectorAll(".webpage-link");
+                 const currentPage = window.location.pathname.split("/").pop() || "index.html"; // retrieve any link or index.html (for logo)
+
+                links.forEach(link => {
+                if (link.getAttribute("href") === currentPage.split("/").pop()) {
+                    link.classList.add("active");
+                } // if each href link has / then add the active state
+            });
+
+            const logoImg = document.querySelector(".logo"); 
+                if (logoImg) {
+                    if (currentPage === "index.html") {
+                        logoImg.src = "activeBrandLogo.png";
+                        logoImg.classList.add("active-logo", "active");
+                    } else {
+                        logoImg.src = "BrandLogo.png";
+                        logoImg.classList.remove("active-logo", "active");
+                    }
+                }
+            }); // set logo to new logo when on index.html otherwise keep it regular.
 
     fetch('footer.html')
         .then(response => response.text())
