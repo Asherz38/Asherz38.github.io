@@ -1,8 +1,12 @@
 function applyTheme() {
     const currentTheme = localStorage.getItem("theme");
+    
     if (currentTheme === "light") {
         document.body.classList.add("light-mode");
+    } else if (currentTheme === "dark") {
+        document.body.classList.remove("light-mode");
     } else {
+        localStorage.setItem("theme", "dark");
         document.body.classList.remove("light-mode");
     }
 } // i used local storage to update the currentTheme whether it's light mode or not.
@@ -41,25 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 } // if each href link has / then add the active state
             });
 
-            const logoImg = document.querySelector(".logo"); 
-                if (logoImg) {
-                    if (currentPage === "index.html") {
-                        logoImg.src = "activeBrandLogo.png";
-                        logoImg.classList.add("active-logo", "active");
-                    } else {
-                        logoImg.src = "BrandLogo.png";
-                        logoImg.classList.remove("active-logo", "active");
-                    }
-                }
-            }); // set logo to new logo when on index.html otherwise keep it regular.
-
     fetch('footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data; // get injected footer html data
         });
 
-    // Load blog posts if on news.html
+    // Load blog posts on news.html
     const blogList = document.getElementById('news-grid');
     if (blogList) {
         fetch('posts.json')
