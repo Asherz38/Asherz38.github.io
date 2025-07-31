@@ -1,6 +1,6 @@
 function applyTheme() {
     const currentTheme = localStorage.getItem("theme");
-    
+
     if (currentTheme === "light") {
         document.body.classList.add("light-mode");
     } else if (currentTheme === "dark") {
@@ -14,7 +14,7 @@ function applyTheme() {
 function toggleTheme() {
     document.body.classList.toggle("light-mode");
     const isLight = document.body.classList.contains("light-mode");
-    if(isLight) {
+    if (isLight) {
         localStorage.setItem("theme", "light");
     } else {
         localStorage.setItem("theme", "dark");
@@ -22,28 +22,29 @@ function toggleTheme() {
 } // this is used to when the button is pressed, changing the page from light to dark and vice versa.
 
 document.addEventListener("DOMContentLoaded", function () {
-   
+
     applyTheme(); // update the current theme to what it was before.
 
-  
+
     fetch('header.html') // header fetched from header.html
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data; // get injected header html data
 
-                const toggleBtn = document.querySelector(".dark-mode-btn"); // get button from header
-                if (toggleBtn) {
-                    toggleBtn.addEventListener("click", toggleTheme);
-                } // if the toggle button exists (the moon looking dark/light button, add a click event listener to it so it functions).
+            const toggleBtn = document.querySelector(".dark-mode-btn"); // get button from header
+            if (toggleBtn) {
+                toggleBtn.addEventListener("click", toggleTheme);
+            } // if the toggle button exists (the moon looking dark/light button, add a click event listener to it so it functions).
 
-                 const links = document.querySelectorAll(".webpage-link");
-                 const currentPage = window.location.pathname.split("/").pop() || "index.html"; // retrieve any link or index.html (for logo)
+            const links = document.querySelectorAll(".webpage-link");
+            const currentPage = window.location.pathname.split("/").pop() || "index.html"; // retrieve any link or index.html (for logo)
 
-                links.forEach(link => {
+            links.forEach(link => {
                 if (link.getAttribute("href") === currentPage.split("/").pop()) {
                     link.classList.add("active");
                 } // if each href link has / then add the active state
             });
+        }); // set logo to new logo when on index.html otherwise keep it regular.
 
     fetch('footer.html')
         .then(response => response.text())
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("footer").innerHTML = data; // get injected footer html data
         });
 
-    // Load blog posts on news.html
+    // Load blog posts if on news.html
     const blogList = document.getElementById('news-grid');
     if (blogList) {
         fetch('posts.json')
