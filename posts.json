@@ -1,12 +1,9 @@
-// Each blog post should explain your process for implementing the light/dark mode
-// switcher (Part One) and the dynamic blog section (Part Two).
-
 [
   {
-    "title": "Test Post", // put title here
-    "date": "July 18, 2025", // put date here
-    "image": "images/test.jpg", // put image here
-    "content": "This is a test post." // write explanation here
+    "title": "Test Post", 
+    "date": "July 18, 2025", 
+    "image": "images/test.jpg",
+    "content": "This is a test post."
   },
 
   {
