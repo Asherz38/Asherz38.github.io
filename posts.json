@@ -2,14 +2,14 @@
   {
     "title": "Dark/Light Mode Switcher", 
     "date": "July 31, 2025", 
-    "image": "images/switcher.png",
+    "image": "switcher.png",
     "content": "For part one, I created a light/dark mode switcher using JS and localStorage. I used a button to activate the 'light-mode' class on the body of the HTML file and stored the user's theme current to what is displayed with localStorage. When the page loads, I check the localStorage and apply the current saved theme, so when the user is on another page with say the light-mode on, it goes loads the page into that theme. The styling inverted colours using the .light-mode class to style when the person presses the button that triggers the dark/light mode activation."
   },
 
   {
     "title": "Dynamic Blog",
     "date": "July 31, 2025",
-    "image": "images/blog.png",
+    "image": "blog.png",
     "content": "For part two, I dynamically loaded the blog posts into a JSON file, but not onto a blog page, but the news page instead (since the news page is already a blog page). I did this using 'post.json' which contain an array of blog post objects *unlimited blog post entries* with a title, date, image and content. I retrieved the code required for the JSON file to work for the assignment, but I also wrote code so the post can be created, with the corresponding properties mentioned before using template literals. I appended a singular post to the list of blogs in JS form. I can add content from a JSON file instead of a HTML file directly." 
   }
 ]
