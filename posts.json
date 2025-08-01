@@ -4,5 +4,13 @@
     "date": "July 18, 2025",
     "image": "images/test.jpg",
     "content": "This is a test post."
+  },
+  {
+    "title": "Test Post",
+    "date": "July 18, 2025",
+    "image": "images/test.jpg",
+    "content": "This is a test post."
   }
 ]
+
+
