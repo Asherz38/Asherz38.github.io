@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     applyTheme(); // update the current theme to what it was before.
 
 
-    fetch('header.html') // header fetched from header.html
+    fetch('/header.html') // header fetched from header.html
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data; // get injected header html data
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }); // set logo to new logo when on index.html otherwise keep it regular.
 
-    fetch('footer.html')
+    fetch('/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data; // get injected footer html data
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Load blog posts if on news.html
     const blogList = document.getElementById('news-grid');
     if (blogList) {
-        fetch('posts.json')
+        fetch('/posts.json')
             .then(response => response.json())
             .then(posts => {
                 posts.forEach(post => {
